@@ -1,0 +1,21 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 13 Jul 2025 21:22:48 at https://ultimatewebsolutions.net/mireya/light/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://ultimatewebsolutions.net/mireya/light/index.html -O1 "D:\subhashish\reset-interiors\.templates\mireya-design" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+21:24:25	Warning: 	File not parsed, looks like binary: https://ultimatewebsolutions.net/mireya/light/css/webfonts/fa-brands-400.woff2
+21:24:25	Warning: 	File not parsed, looks like binary: https://ultimatewebsolutions.net/mireya/light/css/webfonts/fa-brands-400.woff
+21:24:25	Warning: 	File not parsed, looks like binary: https://ultimatewebsolutions.net/mireya/light/css/webfonts/fa-brands-400.ttf
+21:24:25	Warning: 	File not parsed, looks like binary: https://ultimatewebsolutions.net/mireya/light/css/webfonts/fa-regular-400.woff2
+21:24:25	Warning: 	File not parsed, looks like binary: https://ultimatewebsolutions.net/mireya/light/css/webfonts/fa-regular-400.woff
+21:24:25	Warning: 	File not parsed, looks like binary: https://ultimatewebsolutions.net/mireya/light/css/webfonts/fa-regular-400.ttf
+21:24:25	Warning: 	File not parsed, looks like binary: https://ultimatewebsolutions.net/mireya/light/css/webfonts/fa-solid-900.woff2
+21:24:25	Warning: 	File not parsed, looks like binary: https://ultimatewebsolutions.net/mireya/light/css/webfonts/fa-solid-900.woff
+21:24:25	Warning: 	File not parsed, looks like binary: https://ultimatewebsolutions.net/mireya/light/css/webfonts/fa-solid-900.ttf
+21:24:27	Warning: 	Retry after error -4 (Connect Error) at link https://ultimatewebsolutions.net/mireya/light/img/light/clients/c-2.jpg (from https://ultimatewebsolutions.net/mireya/light/about.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 45 seconds : 91 links scanned, 89 files written (25066702 bytes overall) [23639833 bytes received at 225141 bytes/sec], 1935048 bytes transferred using HTTP compression in 30 files, ratio 24%, 1.9 requests per connection
+(No errors, 10 warnings, 0 messages)
