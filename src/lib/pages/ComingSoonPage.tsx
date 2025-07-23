@@ -13,7 +13,7 @@ const ComingSoonPage = ({}) => {
 
   useEffect(() => {
     // Set target date (30 days from now)
-    const targetDate = new Date("2025-07-22T11:30:00+05:30");
+    const targetDate = new Date("2025-07-27T11:30:00+05:30");
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
