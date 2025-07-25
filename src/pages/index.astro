@@ -1,8 +1,9 @@
 ---
 import MainLayout from "../lib/layouts/main-layout.astro";
+import SliderItem from "../components/SliderItem";
 ---
 
-<MainLayout>
+<MainLayout disableFooter>
   <div class="transition-fade">
     <div class="mry-content-frame">
       <canvas class="mry-dots"></canvas>
@@ -14,17 +15,12 @@ import MainLayout from "../lib/layouts/main-layout.astro";
             <div class="mry-project-slider-item">
               <div class="mry-project-frame mry-project-half">
                 <div class="mry-cover-frame">
-                  <img
-                    class="mry-project-cover mry-position-right"
-                    src="/mireya/img/light/projects/prjct-1/fs/1.jpg"
-                    alt="Project"
-                    data-swiper-parallax="500"
-                    data-swiper-parallax-scale="1.4"
-                  />
+                  <SliderItem client:only />
+
                   <div class="mry-cover-overlay"></div>
                   <div class="mry-loading-curtain"></div>
                 </div>
-                <div class="mry-main-title-frame">
+                <div class="mry-main-title-frame" style="z-index: 100;">
                   <div class="container">
                     <div
                       class="mry-main-title"
@@ -185,169 +181,5 @@ import MainLayout from "../lib/layouts/main-layout.astro";
         </div>
       </div>
     </div>
-
-    <section class="block2 my-5 py-5">
-      <div class="fixed-bg bg1"></div>
-      <div class="container">
-        <div class="about-us-section">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div style="width: 100%; height: 100%; padding: 1rem;">
-                <img
-                  class="wow fadeInUp"
-                  data-wow-duration="1000ms"
-                  style="width: 100%; height: auto; object-fit: cover;"
-                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753411964/founder_xvmucl.jpg"
-                  alt=""
-                />
-                <div style="text-align: center; margin-top: 1rem;">
-                  <h2
-                    class="mb-2"
-                    style="font-size: 1.45rem; line-height: normal;"
-                  >
-                    Charmi Gorgi
-                  </h2>
-                  <p>Founder</p>
-                </div>
-              </div><!--abt-imgz end-->
-            </div>
-            <div class="col-lg-6">
-              <div class="about-text">
-                <h2 class="sub-title">About Me</h2>
-                <p>
-                  My journey in interior design began with a childhood
-                  fascination for transforming empty rooms into inviting spaces,
-                  which led to two years of formal education in the field. I
-                  then gained three years of hands-on experience at a leading
-                  interior and architecture firm, focusing on site execution and
-                  project management. In 2016, I launched my first firm,
-                  starting solo and eventually building a team of five, united
-                  by a shared commitment to thoughtful, functional design. A
-                  transformative three-year period in Hong Kong exposed me to a
-                  rich blend of traditional and modern aesthetics, enhancing my
-                  ability to work across diverse markets. In 2022, I founded my
-                  second firm with a clear vision: to create interiors that do
-                  more than appeal visually—they should feel right and support
-                  well-being. I approach each project with the belief that
-                  design deeply influences how we live, aiming to shape spaces
-                  that inspire, uplift, and connect.
-                </p>
-                <a href="/about" title="" class="lnk-default2"
-                  >Read more <i class="la la-arrow-right"></i></a
-                >
-              </div><!--about-text end-->
-            </div>
-          </div>
-        </div><!--about-us-section end-->
-      </div>
-    </section>
-
-    <section class="block">
-      <div class="container">
-        <div class="section-title align-items-center">
-          <h3 class="sub-title">Our work process make your dream true</h3>
-          <a href="/about" title="About us" class="lnk-default2"
-            >More detailed <i class="la la-arrow-right"></i></a
-          >
-        </div>
-        <!--section-title end-->
-        <div class="process-section">
-          <ul>
-            <li>
-              <div class="proz-mint">
-                <h3>Concept</h3>
-                <p>
-                  Blending form and function to create spaces that reflect your
-                  lifestyle and inspire everyday living.
-                </p>
-                <h2 class="p-num">01.</h2>
-              </div>
-              <!--proz-mint end-->
-            </li>
-            <li>
-              <div class="proz-mint">
-                <h3>Design</h3>
-                <p>
-                  Interior design is the art of transforming spaces into
-                  expressions of style, comfort, and purpose.
-                </p>
-                <h2 class="p-num">03.</h2>
-              </div>
-              <!--proz-mint end-->
-            </li>
-            <li>
-              <div class="proz-mint">
-                <h3>Launch</h3>
-                <p>
-                  Unveiling a new era of personalized style — where your very
-                  own dream space begins.
-                </p>
-                <h2 class="p-num">05.</h2>
-              </div>
-              <!--proz-mint end-->
-            </li>
-            <li>
-              <div class="proz-mint">
-                <h3>Plan</h3>
-                <p>
-                  A thoughtful interior design plan that balances beauty,
-                  comfort, and functionality tailored just for you.
-                </p>
-                <h2 class="p-num">02.</h2>
-              </div>
-              <!--proz-mint end-->
-            </li>
-            <li>
-              <div class="proz-mint">
-                <h3>Build</h3>
-                <p>
-                  Bringing visionary interiors to life — from concept to
-                  flawless execution.
-                </p>
-                <h2 class="p-num">04.</h2>
-              </div>
-              <!--proz-mint end-->
-            </li>
-          </ul>
-          <div class="clearfix"></div>
-        </div>
-        <!--process-section end-->
-      </div>
-    </section>
-
-    <section class="consultation-sec pt-5">
-      <div class="container">
-        <div class="consultation-section">
-          <div class="row align-items-center">
-            <div class="col-lg-7">
-              <div class="consult-text">
-                <h3 class="sub-title" style="padding-right: 0;">
-                  Get a free consultation. Just leave a request below
-                </h3>
-                <form class="subsc-form" style="display: flex; gap:0;">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Your phone number"
-                  />
-                  <button type="submit" class="lnk-default" style="margin: 0;">
-                    Сallback <i class="la la-arrow-right"></i>
-                    <span></span>
-                  </button>
-                </form>
-              </div>
-              <!--consult-text end-->
-            </div>
-            <div class="col-lg-5">
-              <div class="consult-img wow slideInUp" data-wow-duration="1000ms">
-                <img src="https://placehold.co/484x646" alt="" />
-              </div>
-              <!--consult-img end-->
-            </div>
-          </div>
-        </div>
-        <!--consultation-section end-->
-      </div>
-    </section>
   </div>
 </MainLayout>

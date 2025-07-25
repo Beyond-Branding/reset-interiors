@@ -1,5 +1,11 @@
 ---
 import WhatsAppWidget from '@/components/WhatsAppWidget.astro';
+
+const {
+  disableFooter = false
+} = Astro.props as {
+  disableFooter: boolean;
+}
 ---
 
 <!doctype html>
@@ -218,6 +224,7 @@ import WhatsAppWidget from '@/components/WhatsAppWidget.astro';
       <div class="transition-fade">
         <slot />
 
+       {!disableFooter && 
         <footer class="mt-5">
           <div class="container">
             <div class="top-footer">
@@ -324,6 +331,7 @@ import WhatsAppWidget from '@/components/WhatsAppWidget.astro';
             <!--bottom-footer end-->
           </div>
         </footer>
+        }
       </div>
     </div>
 
