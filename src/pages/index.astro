@@ -1,6 +1,5 @@
 ---
 import MainLayout from "../lib/layouts/main-layout.astro";
-import SliderItem from "../components/SliderItem";
 ---
 
 <MainLayout disableFooter>
@@ -15,12 +14,17 @@ import SliderItem from "../components/SliderItem";
             <div class="mry-project-slider-item">
               <div class="mry-project-frame mry-project-half">
                 <div class="mry-cover-frame">
-                  <SliderItem client:only />
-
+                  <img
+                    class="mry-project-cover mry-position-right"
+                    src="/mireya/img/light/projects/prjct-1/fs/1.jpg"
+                    alt="Project"
+                    data-swiper-parallax="500"
+                    data-swiper-parallax-scale="1.4"
+                  />
                   <div class="mry-cover-overlay"></div>
                   <div class="mry-loading-curtain"></div>
                 </div>
-                <div class="mry-main-title-frame" style="z-index: 100;">
+                <div class="mry-main-title-frame">
                   <div class="container">
                     <div
                       class="mry-main-title"
