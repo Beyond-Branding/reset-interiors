@@ -1,0 +1,83 @@
+<style>
+  .container {
+    width: 100%;
+    max-width: 1200px; /* or any fixed value */
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 1.25rem;
+  }
+
+  .contact-section {
+    max-height: 450px;
+  }
+
+  .masonary-grid-container {
+    display: flex;
+  }
+
+  .masonary-grid-container > div {
+    flex: 1;
+  }
+
+  .masonary-grid {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+  }
+
+  .masonary-item {
+    flex: auto;
+    height: 250px;
+    min-width: 150px;
+  }
+
+  .masonary-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+
+<section class="contact-section">
+  <div class="container masonary-grid-container">
+    <div class="column">
+      <h4>Turn Your Dream Home Into a Reality</h4>
+      <p>
+        We bring your vision to life with thoughtful design, expert
+        craftsmanship, and a deep understanding of what makes a house truly feel
+        like home. From concept to completion, we create personalized spaces
+        that reflect your style, needs, and dreams.
+      </p>
+      <button>Contact Us</button>
+    </div>
+
+    <div class="column">
+      <div class="masonary-grid">
+        <div class="masonary-item">
+          <img
+            src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753447404/ACCOUNTS_CABIN_DIANCO_OFFICE_1.jpeg_gwzlfq.jpg"
+          />
+        </div>
+
+        <div class="masonary-item">
+          <img
+            src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753447397/CONFERENCE_DIANCO_OFFICE_2.jpeg_rvv8un.jpg"
+          />
+        </div>
+
+        <div class="masonary-item">
+          <img
+            src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753446385/MASTER_BEDROOM_8G_CARIBBEAN_COAST_3.jpeg_pccbht.jpg"
+          />
+        </div>
+
+        <div class="masonary-item">
+          <img
+            src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753446261/LIVING_ROOM_8G_CARIBBEAN_COAST_2.jpeg_1_khvc2h.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
