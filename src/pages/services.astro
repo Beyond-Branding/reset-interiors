@@ -1,79 +1,9 @@
-<!doctype html>
-<html lang="zxx">
-  <!-- Mirrored from ultimatewebsolutions.net/mireya/light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Jul 2025 15:52:57 GMT -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- color of address bar in mobile browser -->
-    <meta name="theme-color" content="#28292C" />
-    <!-- favicon  -->
-    <link
-      rel="shortcut icon"
-      href="/mireya/img/light/favicon.png"
-      type="image/x-icon"
-    />
+---
+import MainLayout from "../lib/layouts/main-layout.astro";
+---
 
-    <!-- Minterirors -->
+<MainLayout>
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/animate.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/all.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/line-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/slick-theme.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/color.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/responsive.css"
-    />
-
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/bootstrap.min.css" />
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/font-awesome.min.css" />
-    <!-- swiper css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/swiper.min.css" />
-    <!-- fancybox css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/fancybox.min.css" />
-    <!-- mapbox css -->
-    <link href="/mireya/css/plugins/mapbox-style.css" rel="stylesheet" />
-    <!-- main css -->
-    <link rel="stylesheet" href="/mireya/css/style-light.css" />
-
-    <title>Mireya</title>
-  </head>
 
   <body>
     <div class="mry-app">
@@ -289,8 +219,8 @@
                 <li><a href="#" title="">Home</a></li>
                 <li><span>Services</span></li>
               </ul><!--breadcrumb end-->
-              <h2>Services</h2>
-              <span>Please review our services</span>
+              <h2>Our <br>Services</h2>
+              <!-- <span>Please review our services</span> -->
             </div>
             <div class="pger-imgs style2">
               <div class="abt-imgz">
@@ -305,7 +235,7 @@
   <div class="container">
     <div class="section-title">
       <h3 class="sub-title">Our Services</h3>
-      <p>We are ready to offer you a complete range of design and architecture services.</p>
+      <!-- <p>We are ready to offer you a complete range of design and architecture services.</p> -->
     </div>
     <div class="service-grid">
       <div class="service-card">
@@ -378,7 +308,102 @@
   </div>
 </section>
 
+<section class="vision-sec py-5">
+  <div class="fixed-bg bg1"></div>
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Image Layout -->
+      <div class="col-lg-7">
+        <div class="custom-image-layout">
+          <div class="img-box img1"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img1" /></div>
+          <div class="img-box img2"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img2" /></div>
+          <div class="img-box img3"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img3" /></div>
+          <div class="img-box img4"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img4" /></div>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="col-lg-5">
+  <div class="vision-content mt-5 mt-lg-0">
+    <h2 style="font-size: 2.75rem; font-weight: 700; color: #7c6240;">
+      Turn Your Dream <br />Home Into A Reality
+    </h2>
+    <p class="mt-3" style="font-size: 1rem; color: #333;">
+      We bring your vision to life with thoughtful design, expert craftsmanship,
+      and a deep understanding of what makes a house truly feel like home. From
+      concept to completion, we create personalized spaces that reflect your
+      style, needs, and dreams.
+    </p>
+    <a
+      href="/contact"
+      class="btn btn-outline-dark mt-4"
+      style="
+        padding: 10px 30px;
+        border-radius: 40px;
+        font-weight: 500;
+      "
+    >
+      Contact Us
+    </a>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+</MainLayout>
+
 <style>
+
+  .custom-image-layout {
+  position: relative;
+  width: 100%;
+  height: 550px; /* adjust height as needed */
+}
+
+.img-box {
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* <<< You can now adjust these manually to match your design >>> */
+
+.img1 {
+  top: 248px;
+  left: 50px;
+  width: 132px;
+  height: 102px;
+}
+
+.img2 {
+  top: 50px;
+  left: 200px;
+  width: 406px;
+  height: 300px;
+}
+
+.img3 {
+  bottom: 0;
+  left: 0;
+  width: 280px;
+  height: 190px;
+}
+
+.img4 {
+  top: 360px;
+  left: 300px;
+  width: 160px;
+  height: 120px;
+}
+
   :root {
     --font-sans: 'Manrope', sans-serif;
   }
@@ -502,192 +527,5 @@
   }
 </style>
 
-        <section class="consultation-sec pt-5">
-          <div class="container">
-            <div class="consultation-section">
-              <div class="row align-items-center">
-                <div class="col-lg-7">
-                  <div class="consult-text">
-                    <h3 class="sub-title" style="padding-right: 0;">
-                      Get a free consultation. Just leave a request below
-                    </h3>
-                    <form class="subsc-form" style="display: flex; gap:0;">
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Your phone number"
-                      />
-                      <button
-                        type="submit"
-                        class="lnk-default"
-                        style="margin: 0;"
-                      >
-                        Сallback <i class="la la-arrow-right"></i>
-                        <span></span>
-                      </button>
-                    </form>
-                  </div>
-                  <!--consult-text end-->
-                </div>
-                <div class="col-lg-5">
-                  <div
-                    class="consult-img wow slideInUp"
-                    data-wow-duration="1000ms"
-                  >
-                    <img src="https://placehold.co/484x646" alt="" />
-                  </div>
-                  <!--consult-img end-->
-                </div>
-              </div>
-            </div>
-            <!--consultation-section end-->
-          </div>
-        </section>
+        
 
-        <footer class="mt-5">
-          <div class="container">
-            <div class="top-footer">
-              <div class="row">
-                <div class="col-lg-6 col-md-12">
-                  <div class="widget widget-info">
-                    <h3 class="widget-title">NEWSLETTER</h3>
-                    <form class="widget-form">
-                      <input
-                        type="text"
-                        name="email"
-                        placeholder="Your e-mail"
-                      />
-                      <button type="submit">
-                        <i class="la la-arrow-right"></i>
-                      </button>
-                    </form>
-                    <span>Sign up to receive sprecial offers!</span>
-                    <ul class="social-links">
-                      <li>
-                        <a href="#" title=""><i class="fab fa-behance"></i></a>
-                      </li>
-                      <li>
-                        <a href="#" title=""><i class="fab fa-instagram"></i></a
-                        >
-                      </li>
-                      <li>
-                        <a href="#" title=""
-                          ><i class="fab fa-facebook-f"></i></a
-                        >
-                      </li>
-                    </ul>
-                    <!--social-links end-->
-                  </div>
-                  <!--widget-info end-->
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                      <div class="widget widget-contact text-right">
-                        <h3 class="widget-title">Contact Us</h3>
-                        <ul class="ft-links">
-                          <li>
-                            1556 Broadway, suite 416 New York, NY 10120 USA
-                          </li>
-                          <li>+44 20 7722 0088</li>
-                          <li><a href="#" title="">in.design@gmail.com</a></li>
-                        </ul>
-                        <!--ft-links end-->
-                      </div>
-                      <!--widget-contact end-->
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                      <div class="widget widget-category text-right">
-                        <h3 class="widget-title">Contact Us</h3>
-                        <ul class="ft-links">
-                          <li><a href="#" title="">Decor</a></li>
-                          <li><a href="#" title="">Furniture</a></li>
-                          <li><a href="#" title="">Lighting</a></li>
-                          <li><a href="#" title="">Interior design</a></li>
-                          <li><a href="#" title="">Architecture design</a></li>
-                          <li><a href="#" title="">Commercial design</a></li>
-                        </ul>
-                        <!--ft-links end-->
-                      </div>
-                      <!--widget-contact end-->
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-                      <div class="widget widget-company text-right">
-                        <h3 class="widget-title">Contact Us</h3>
-                        <ul class="ft-links">
-                          <li><a href="about.html" title="">About Us</a></li>
-                          <li><a href="services.html" title="">Services</a></li>
-                          <li>
-                            <a href="portfolio.html" title="">Portfolio</a>
-                          </li>
-                          <li><a href="#" title="">Delivery</a></li>
-                          <li>
-                            <a href="contact.html" title="">Contact Us</a>
-                          </li>
-                          <li><a href="blog.html" title="">Blog</a></li>
-                        </ul>
-                        <!--ft-links end-->
-                      </div>
-                      <!--widget-contact end-->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--top-footer end-->
-            <div class="bottom-footer">
-              <div class="ft-logo">
-                <img src="assets/images/ft-logo.png" alt="" />
-              </div>
-              <!--ft-logo end-->
-              <ul class="btm-links">
-                <li><a href="#" title="">Privacy Policy</a></li>
-                <li><a href="#" title="">Terms and Conditions</a></li>
-              </ul>
-              <!--btm-links end-->
-              <div class="clearfix"></div>
-            </div>
-            <!--bottom-footer end-->
-          </div>
-        </footer>
-      </div>
-    </div>
-
-    <script defer src="/minteriors/assets/js/popper.js"></script>
-    <script defer src="/minteriors/assets/js/bootstrap.min.js"></script>
-    <script defer src="/minteriors/assets/js/plugin/slick.min.js"></script>
-    <script defer src="/minteriors/assets/js/plugin/html5lightbox.js"></script>
-    <script defer src="/minteriors/assets/js/placeholdem.min.js"></script>
-    <script defer src="/minteriors/assets/js/wow.min.js"></script>
-    <script defer src="/minteriors/assets/js/script.js"></script>
-
-    <!-- jquery js -->
-    <script defer src="/mireya/js/plugins/jquery.min.js"></script>
-    <!-- tween max js -->
-    <script defer src="/mireya/js/plugins/tween-max.min.js"></script>
-    <!-- scroll magic js -->
-    <script defer src="/mireya/js/plugins/scroll-magic.js"></script>
-    <!-- scroll magic gsap plugin js -->
-    <script defer src="/mireya/js/plugins/scroll-magic-gsap-plugin.js"></script>
-    <!-- swiper js -->
-    <script defer src="/mireya/js/plugins/swiper.min.js"></script>
-    <!-- isotope js -->
-    <script defer src="/mireya/js/plugins/isotope.min.js"></script>
-    <!-- fancybox js -->
-    <script defer src="/mireya/js/plugins/fancybox.min.js"></script>
-    <!-- mapbox js -->
-    <script defer src="/mireya/js/plugins/mapbox.min.js"></script>
-    <!-- smooth scrollbar js -->
-    <script defer src="/mireya/js/plugins/smooth-scrollbar.min.js"></script>
-    <!-- overscroll js -->
-    <script defer src="/mireya/js/plugins/overscroll.min.js"></script>
-    <!-- canvas js -->
-    <script defer src="/mireya/js/plugins/canvas.js"></script>
-    <!-- parsley js -->
-    <script defer src="/mireya/js/plugins/parsley.min.js"></script>
-    <!-- main js -->
-    <script defer src="/mireya/js/main.js"></script>
-  </body>
-
-  <!-- Mirrored from ultimatewebsolutions.net/mireya/light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Jul 2025 15:53:18 GMT -->
-</html>
