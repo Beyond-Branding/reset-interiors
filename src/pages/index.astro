@@ -32,14 +32,11 @@ import MainLayout from "../lib/layouts/main-layout.astro";
                       data-swiper-parallax-opacity="0"
                       data-swiper-parallax-duration="1000"
                     >
-                      
-                      <h2 class="mry-mb-30">
-                        Designing the Heart<br /><span class="mry-border-text"
-                          >of the Home</span
-                        >
-                      </h2>
-                      <div class="mry-text mry-mb-30">
-                        From cozy charm to modern minimalism, expert design <br>turns your living room into a space that reflects your<br> lifestyle and personality
+                      <h3 class="mry-mb-30" style="font-size: 36px;">
+                        Designing the Heart<br /><span class="mry-border-text">of the Home</span>
+                      </h3>
+                      <div class="mry-text mry-mb-30" style="font-size: 14px;">
+                        From cozy charm to modern minimalism, expert <br />design turns your living room into a space that<br /> reflects your lifestyle and personality
                       </div>
                       <a
                         class="mry-btn mry-default-link mry-anima-link"
@@ -77,14 +74,11 @@ import MainLayout from "../lib/layouts/main-layout.astro";
                       data-swiper-parallax-opacity="0"
                       data-swiper-parallax-duration="1000"
                     >
-                      
-                      <h2 class="mry-mb-30">
-                        Transforming Bedrooms Into <br /><span class="mry-border-text"
-                          >Elevated Living Spaces</span
-                        ><span class="mry-animation-el"></span>
-                      </h2>
-                      <div class="mry-text mry-mb-30">
-                        As your personal sanctuary, the bedroom deserves a <br> design that harmonizes comfort, elegance, and <br> tranquility—crafted for rest and renewal.
+                      <h3 class="mry-mb-30" style="font-size: 25px;">
+                        Transforming Bedrooms Into<br /><span class="mry-border-text" style="font-size: 30px;">Elevated Living Spaces</span>
+                      </h3>
+                      <div class="mry-text mry-mb-30" style="font-size: 14px;">
+                        As your personal sanctuary, the bedroom deserves <br> a design that harmonizes comfort, elegance, and <br> tranquility—crafted for rest and renewal.
                       </div>
                       <a
                         class="mry-btn mry-default-link mry-anima-link"
@@ -122,15 +116,11 @@ import MainLayout from "../lib/layouts/main-layout.astro";
                       data-swiper-parallax-opacity="0"
                       data-swiper-parallax-duration="1000"
                     >
-                      
-                      <h2 class="mry-mb-30">
-                        Study <br /><span class="mry-border-text"
-                          >Room</span
-                        ><span class="mry-animation-el"></span>
-                      </h2>
-                      <div class="mry-text mry-mb-30">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.<br />Adipisci distinctio iure, rerum non fugit.
+                      <h3 class="mry-mb-30" style="font-size: 33px;">
+                        Curating Study Rooms<br /><span class="mry-border-text">into Elegant Interiors</span>
+                      </h3>
+                      <div class="mry-text mry-mb-30" style="font-size: 14px;">
+                        Designed for focus and inspiration, our study rooms <br> combine sleek aesthetics with smart functionality. <br> Clean lines, organized storage, and soothing tones <br> create a  modern space that’s perfect for working, <br> studying, or  simply enjoying a quiet reading nook.
                       </div>
                       <a
                         class="mry-btn mry-default-link mry-anima-link"
@@ -168,14 +158,13 @@ import MainLayout from "../lib/layouts/main-layout.astro";
                       data-swiper-parallax-opacity="0"
                       data-swiper-parallax-duration="1000"
                     >
-                      
-                      <h2 class="mry-mb-30">
+                      <h3 class="mry-mb-30" style="font-size: 36px;">
                         Inspiring Spaces<br /><span class="mry-border-text"
                           >Timeless Kitchens</span
                         ><span class="mry-animation-el"></span>
-                      </h2>
-                      <div class="mry-text mry-mb-30">
-                        Beyond cooking, the kitchen is a space where memories <br> are made and stories are shared. Make every <br> moment meaningful.
+                      </h3>
+                      <div class="mry-text mry-mb-30" style="font-size: 14px;">
+                        Beyond cooking, the kitchen is a space where <br> memories  are made and stories are shared. Make <br> every moment meaningful.
                       </div>
                       <a
                         class="mry-btn mry-default-link mry-anima-link"
@@ -226,6 +215,16 @@ import MainLayout from "../lib/layouts/main-layout.astro";
 </MainLayout>
 
 <style>
+   @import url('https://fonts.cdnfonts.com/css/modern-sans');
+  :global(body) {
+    font-family: 'Modern Sans', sans-serif;
+}
+
+  .mry-progress {
+    background-color: #7E6422
+; 
+  }
+
   @media (max-width: 992px) {
 
     :root {
@@ -309,12 +308,9 @@ import MainLayout from "../lib/layouts/main-layout.astro";
       display: none;
     }
 
-<div class="mry-bottom-mobile-buttons">
-  <a class="mry-btn mry-default-link" href="project.html">Open Case</a>
-  <a class="mry-btn-text mry-default-link" href="portfolio-grid-1.html">All Projects</a>
-</div>
-
-
+    .mry-bottom-mobile-buttons {
+      display: none; /* Hide placeholder div */
+    }
     
     .mry-slider-arrows {
       position: static;
@@ -340,7 +336,9 @@ import MainLayout from "../lib/layouts/main-layout.astro";
       display: none;
     }
 
-    .mry-main-title h1 {
+    .mry-main-title h1,
+    .mry-main-title h2,
+    .mry-main-title h3 {
       font-size: var(--mobile-title-fontsize);
       line-height: var(--mobile-title-lineheight);
       margin-top: 0;
@@ -363,11 +361,10 @@ import MainLayout from "../lib/layouts/main-layout.astro";
         margin: 20px 0;
     }
 
-.mry-bottom-mobile-buttons a {
+    .mry-bottom-mobile-buttons a {
       font-size: 10px;
       padding: 4px 8px;
       text-decoration: none;
     }
-
   }
 </style>
