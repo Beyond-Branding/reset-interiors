@@ -5,6 +5,7 @@ import MainLayout from "../lib/layouts/main-layout.astro";
 <MainLayout>
   <section class="hero-about">
     <div class="fixed-bg bg1"></div>
+
     <div class="container">
       <div class="hero-about__grid">
         <div class="hero-about__text">
@@ -13,13 +14,8 @@ import MainLayout from "../lib/layouts/main-layout.astro";
             <li><span>About Us</span></li>
           </ul>
           <h2>About Us</h2>
-          <span>Our history</span>
         </div>
         <div class="hero-about__image">
-          <!-- <img
-            src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753639975/LIVINGROOM-4-1-1920x1477_kqppy1.jpg"
-            alt="Interior design visual"
-          /> -->
         </div>
       </div>
     </div>
@@ -28,11 +24,10 @@ import MainLayout from "../lib/layouts/main-layout.astro";
   <section class="block2">
     <div class="container about-flex-container">
       <div class="about-text-wrapper">
-        <h3 class="sub-title">About Us</h3>
+        <h3 class="sub-title">History</h3>
         <p>
-          From childhood curiosity to global expertise, my journey in interior
-          design has been a lifelong pursuit of crafting meaningful spaces that
-          tell stories and elevate everyday life.
+          What began as a childhood curiosity has grown into a passion for designing spaces that feel alive and tell their own stories. My journey in interior design has been about blending beauty with comfort, creating rooms that don’t just look elegant but also feel warm and meaningful. Every project is a chance to turn everyday spaces into places where memories are made and life feels a little more inspiring.
+          <br>“Designing spaces, crafting emotions, and shaping stories within walls.”
         </p>
       </div>
       <div class="about-image-wrapper">
@@ -44,41 +39,28 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     </div>
   </section>
 
-  <section class="block2 my-5 py-5">
-  <div class="fixed-bg bg1"></div>
-  <div class="container">
-    <div class="about-us-section">
-      <div class="row align-items-center">
-        <div class="col-lg-6 pr-lg-3 text-center">
-          <div class="abt-imgz">
-            <img
-              class="wow fadeInUp"
-              data-wow-duration="1000ms"
-              src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753411964/founder_xvmucl.jpg"
-              alt=""
-              style="width: 660px; height: 500px; object-fit: cover; border-radius: 0px;"
-            />
-          </div>
-          <!-- <div class="mt-3">
-            <h5 style="margin-bottom: 0; font-weight: 600;">Charmi Gogri</h5>
-            <p style="margin-top: 0; font-size: 14px; color: #555;">Founder</p>
-          </div> -->
-        </div>
-        <div class="col-lg-6 pl-lg-3">
-          <div class="about-text" style="margin-left: -20px;">
-            <h2 class="sub-title">History of our creation</h2>
-            <p style="text-align: justify; font-size: 14px;">
-              My journey in interior design began with a childhood fascination for transforming empty rooms into inviting spaces, which led to two years of formal education in the field. I then gained three years of hands-on experience at a leading interior and architecture firm, focusing on site execution and project management. In 2016, I launched my first firm, starting solo and eventually building a team of five, united by a shared commitment to thoughtful, functional design.
-              A transformative three-year period in Hong Kong exposed me to a rich blend of traditional and modern aesthetics, enhancing my ability to work across diverse markets. In 2022, I founded my second firm with a clear vision: to create interiors that do more than appeal visually—they should feel right and support well-being. I approach each project with the belief that design deeply influences how we live, aiming to shape spaces that inspire, uplift, and connect.
-            </p>
-          </div>
+  <section class="block2 my-4 py-3">
+    <div class="fixed-bg bg1"></div>
+    <div class="container about-flex-container about-me-layout">
+      <div class="about-image-wrapper">
+        <img
+          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753411964/founder_xvmucl.jpg"
+          alt="Founder"
+        />
+        <div class="image-caption">
+          <h3>Charmi Gogri</h3>
+          <span><h4>Founder</h4></span>
         </div>
       </div>
+      <div class="about-text-wrapper">
+        <h3 class="sub-title">About Me</h3>
+        <p style="text-align: justify; font-size: 14px; line-height: 1.8;">
+          My journey in interior design began with a childhood fascination for transforming empty rooms into inviting spaces, which led to two years of formal education in the field. I then gained three years of hands-on experience at a leading interior and architecture firm, focusing on site execution and project management. In 2016, I launched my first firm, starting solo and eventually building a team of five, united by a shared commitment to thoughtful, functional design.
+          A transformative three-year period in Hong Kong exposed me to a rich blend of traditional and modern aesthetics, enhancing my ability to work across diverse markets. In 2022, I founded my second firm with a clear vision: to create interiors that do more than appeal visually—they should feel right and support well-being. I approach each project with the belief that design deeply influences how we live, aiming to shape spaces that inspire, uplift, and connect.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
-
-
+  </section>
 
   <div class="block2">
     <div class="container">
@@ -95,17 +77,13 @@ import MainLayout from "../lib/layouts/main-layout.astro";
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="award-col">
                     <h2 class="count">10</h2>
-                    <h3 style="text-align: center; padding: 0 !important;">
-                      Awards gained
-                    </h3>
+                    <h3>Awards gained</h3>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="award-col">
                     <h2 class="count">315</h2>
-                    <h3 style="text-align: center; padding: 0 !important;">
-                      Happy customers
-                    </h3>
+                    <h3>Happy customers</h3>
                   </div>
                 </div>
               </div>
@@ -116,112 +94,152 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     </div>
   </div>
 
-<section class="vision-sec py-5">
-  <div class="fixed-bg bg1"></div>
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Left Image Layout -->
-      <div class="col-lg-7">
-        <div class="custom-image-layout">
-          <div class="img-box img1"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img1" /></div>
-          <div class="img-box img2"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img2" /></div>
-          <div class="img-box img3"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img3" /></div>
-          <div class="img-box img4"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img4" /></div>
+  <script>
+  // This function animates a single number
+  function animateCountUp(element) {
+    const finalCount = parseInt(element.textContent, 10);
+    const duration = 4000; // Animation duration in milliseconds (4 seconds)
+    let startTime = null;
+
+    const step = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const current = Math.min(Math.floor((progress / duration) * finalCount), finalCount);
+      element.textContent = current;
+
+      if (progress < duration) {
+        window.requestAnimationFrame(step);
+      } else {
+        element.textContent = finalCount;
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+
+  // This sets up the observer to watch for the section
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counters = entry.target.querySelectorAll('.count');
+        counters.forEach(counter => {
+          animateCountUp(counter);
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  // Find the section we want to watch and start observing
+  const sectionToWatch = document.querySelector('.arch-section');
+  if (sectionToWatch) {
+    observer.observe(sectionToWatch);
+  }
+</script>
+
+
+
+
+
+  <section class="vision-sec py-5">
+    <div class="fixed-bg bg1"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="custom-image-layout">
+            <div class="img-box img1"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img1" /></div>
+            <div class="img-box img2"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img2" /></div>
+            <div class="img-box img3"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img3" /></div>
+            <div class="img-box img4"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img4" /></div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="vision-content mt-5 mt-lg-0">
+            <h2 style="font-size: 2.75rem; font-weight: 700; color: #7E6422;">
+              Turn Your Dream <br />Home Into A Reality
+            </h2>
+            <p class="mt-3" style="font-size: 1rem; color: #333;">
+              We bring your vision to life with thoughtful design, expert craftsmanship,
+              and a deep understanding of what makes a house truly feel like home. From
+              concept to completion, we create personalized spaces that reflect your
+              style, needs, and dreams.
+            </p>
+            <a href="/contact" class="btn btn-outline-dark mt-4" style="padding: 10px 30px; border-radius: 40px; font-weight: 500;">
+              Contact Us
+            </a>
+          </div>
         </div>
       </div>
-
-      <!-- Right Content -->
-      <div class="col-lg-5">
-  <div class="vision-content mt-5 mt-lg-0">
-    <h2 style="font-size: 2.75rem; font-weight: 700; color: #7c6240;">
-      Turn Your Dream <br />Home Into A Reality
-    </h2>
-    <p class="mt-3" style="font-size: 1rem; color: #333;">
-      We bring your vision to life with thoughtful design, expert craftsmanship,
-      and a deep understanding of what makes a house truly feel like home. From
-      concept to completion, we create personalized spaces that reflect your
-      style, needs, and dreams.
-    </p>
-    <a
-      href="/contact"
-      class="btn btn-outline-dark mt-4"
-      style="
-        padding: 10px 30px;
-        border-radius: 40px;
-        font-weight: 500;
-      "
-    >
-      Contact Us
-    </a>
-  </div>
-</div>
     </div>
-  </div>
-</section>
-
-
-
-
-
+  </section>
 </MainLayout>
 
+
 <style>
+  @import url('https://fonts.cdnfonts.com/css/modern-sans');
+  :global(body) {
+    font-family: 'Modern Sans', sans-serif;
+}
 
   .custom-image-layout {
-  position: relative;
-  width: 100%;
-  height: 550px; 
+    position: relative;
+    width: 100%;
+    height: 550px; 
+  }
+
+  .vision-content .btn-outline-dark:hover {
+  background-color: #7E6422;
+  border-color: #7E6422;
+  color: #fff;
 }
 
-.img-box {
-  position: absolute;
-  border-radius: 10px;
-  overflow: hidden;
-}
+  .img-box {
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 
-.img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+  .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 
-
-.img1 {
-  top: 248px;
-  left: 50px;
-  width: 132px;
-  height: 102px;
-}
-
-.img2 {
-  top: 50px;
-  left: 200px;
-  width: 406px;
-  height: 300px;
-}
-
-.img3 {
-  bottom: 0;
-  left: 0;
-  width: 280px;
-  height: 190px;
-}
-
-.img4 {
-  top: 360px;
-  left: 300px;
-  width: 160px;
-  height: 120px;
-}
+  .img1 { top: 248px; left: 50px; width: 132px; height: 102px; }
+  .img2 { top: 50px; left: 200px; width: 406px; height: 300px; }
+  .img3 { bottom: 0; left: 0; width: 280px; height: 190px; }
+  .img4 { top: 360px; left: 300px; width: 160px; height: 120px; }
 
 
+  .fixed-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 
+  /* === Styles for the Hero Section === */
   .hero-about {
-    background-color: #f8f8f8;
-    padding: 80px 0;
+    position: relative;
+    padding: 120px 0;
     display: flex;
     align-items: center;
+    overflow: hidden;
+  }
+
+  .hero-about::after {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    right: 25%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
   }
 
   .hero-about__grid {
@@ -238,15 +256,20 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     min-width: 350px;
   }
 
-  .hero-about__text h2 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin: 0.5rem 0;
+  .hero-about__text {
+    position: relative;
+  }
+  
+  .hero-about__text::after {
+    display: none;
   }
 
-  .hero-about__text span {
-    font-size: 1.25rem;
-    color: #555;
+  .hero-about__text h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    color: #1a1a1a;
+    line-height: 1.1;
   }
 
   .hero-about__text .breadcrumb {
@@ -258,20 +281,17 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     background: transparent !important;
   }
 
-  .hero-about__text .breadcrumb li {
-    color: #777;
-    font-size: 0.9rem;
+  .hero-about__text .breadcrumb li,
+  .hero-about__text .breadcrumb a {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 1rem;
     text-transform: none;
   }
 
   .hero-about__text .breadcrumb li+li::before {
     content: '/';
-    margin: 0 0.5rem;
-  }
-
-  .hero-about__text .breadcrumb a {
-    color: #777;
-    text-decoration: none;
+    margin: 0 0.75rem;
   }
 
   .hero-about__image img {
@@ -280,31 +300,64 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     border-radius: 8px;
   }
 
+  /* === Styles for the History/About Me Sections === */
   .about-flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem; 
   }
 
-  .about-text-wrapper {
-    flex-basis: 48%;
-    min-width: 350px;
-    order: 1;
-  }
-
+  .about-text-wrapper,
   .about-image-wrapper {
     flex-basis: 48%;
     min-width: 350px;
-    order: 2;
+  }
+
+  /* Default order for History section (Text Left, Image Right) */
+  .about-text-wrapper {
+    order: 1; 
+  }
+  .about-image-wrapper {
+    order: 2; 
   }
 
   .about-image-wrapper img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
+    border-radius: 24px; 
   }
+
+  /* === Styles for the "About Me" section layout === */
+  
+  /* Use this modifier class to set the order */
+  .about-me-layout .about-text-wrapper {
+    order: 2; /* Text on the right */
+    flex-basis: 55%; 
+  }
+  .about-me-layout .about-image-wrapper {
+    order: 1; /* Image on the left */
+    flex-basis: 40%;
+  }
+
+  /* Style for the caption below the image */
+  .image-caption {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .image-caption h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #7E6422;
+  }
+  .image-caption span {
+    font-size: 0.9rem;
+    color: #777;
+  }
+
 
   .abt-imgz {
     margin-bottom: 30px;
