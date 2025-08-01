@@ -13,7 +13,8 @@ import MainLayout from "../lib/layouts/main-layout.astro";
             <li><a href="/" title="">Home</a></li>
             <li><span>About Us</span></li>
           </ul>
-          <h2>About Us</h2>
+          <br>
+          <h3 style="font-size: 48px;">About Us</h3>
         </div>
         <div class="hero-about__image">
         </div>
@@ -95,10 +96,9 @@ import MainLayout from "../lib/layouts/main-layout.astro";
   </div>
 
   <script>
-  // This function animates a single number
   function animateCountUp(element) {
     const finalCount = parseInt(element.textContent, 10);
-    const duration = 4000; // Animation duration in milliseconds (4 seconds)
+    const duration = 4000; 
     let startTime = null;
 
     const step = (timestamp) => {
@@ -116,7 +116,6 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     window.requestAnimationFrame(step);
   }
 
-  // This sets up the observer to watch for the section
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -131,7 +130,6 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     threshold: 0.5
   });
 
-  // Find the section we want to watch and start observing
   const sectionToWatch = document.querySelector('.arch-section');
   if (sectionToWatch) {
     observer.observe(sectionToWatch);
@@ -148,15 +146,15 @@ import MainLayout from "../lib/layouts/main-layout.astro";
       <div class="row align-items-center">
         <div class="col-lg-7">
           <div class="custom-image-layout">
-            <div class="img-box img1"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img1" /></div>
-            <div class="img-box img2"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img2" /></div>
-            <div class="img-box img3"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img3" /></div>
-            <div class="img-box img4"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg" alt="img4" /></div>
+            <div class="img-box img1"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A2_ultc2o.jpg" alt="img1" /></div>
+            <div class="img-box img2"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A1_cwchor.jpg" alt="img2" /></div>
+            <div class="img-box img3"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A4_mkotch.jpg" alt="img3" /></div>
+            <div class="img-box img4"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067749/A3_nvoo65.jpg" alt="img4" /></div>
           </div>
         </div>
         <div class="col-lg-5">
           <div class="vision-content mt-5 mt-lg-0">
-            <h2 style="font-size: 2.75rem; font-weight: 700; color: #7E6422;">
+            <h2 style="font-size: 2.75rem; font-weight: 700; color: #684F36;">
               Turn Your Dream <br />Home Into A Reality
             </h2>
             <p class="mt-3" style="font-size: 1rem; color: #333;">
@@ -177,10 +175,7 @@ import MainLayout from "../lib/layouts/main-layout.astro";
 
 
 <style>
-  @import url('https://fonts.cdnfonts.com/css/modern-sans');
-  :global(body) {
-    font-family: 'Modern Sans', sans-serif;
-}
+  
 
   .custom-image-layout {
     position: relative;
@@ -188,9 +183,13 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     height: 550px; 
   }
 
+  .count {
+  color: #684F36;
+}
+
   .vision-content .btn-outline-dark:hover {
-  background-color: #7E6422;
-  border-color: #7E6422;
+  background-color: #684F36;
+  border-color: #684F36;
   color: #fff;
 }
 
@@ -300,7 +299,6 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     border-radius: 8px;
   }
 
-  /* === Styles for the History/About Me Sections === */
   .about-flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -315,7 +313,6 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     min-width: 350px;
   }
 
-  /* Default order for History section (Text Left, Image Right) */
   .about-text-wrapper {
     order: 1; 
   }
@@ -330,19 +327,15 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     border-radius: 24px; 
   }
 
-  /* === Styles for the "About Me" section layout === */
-  
-  /* Use this modifier class to set the order */
   .about-me-layout .about-text-wrapper {
-    order: 2; /* Text on the right */
+    order: 2; 
     flex-basis: 55%; 
   }
   .about-me-layout .about-image-wrapper {
-    order: 1; /* Image on the left */
+    order: 1; 
     flex-basis: 40%;
   }
 
-  /* Style for the caption below the image */
   .image-caption {
     text-align: center;
     margin-top: 20px;
@@ -351,7 +344,7 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     margin: 0;
     font-size: 1.8rem;
     font-weight: 600;
-    color: #7E6422;
+    color: #684F36;
   }
   .image-caption span {
     font-size: 0.9rem;
