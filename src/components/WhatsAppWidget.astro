@@ -3,7 +3,10 @@
     <div class="chat-header">
       <button class="close-btn" id="close-btn">&times;</button>
       <div class="whatsapp-profile">
-        <img src="https://i.ibb.co/2yZk4H4/avatar.png" alt="WhatsApp Avatar" />
+        <img
+          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754144819/WhatsApp_Image_2025-06-06_at_6.50.23_PM_aiwzuw.jpg"
+          alt="WhatsApp Avatar"
+        />
       </div>
       <div class="whatsapp-profile-info">
         <h3>WhatsApp Us</h3>
@@ -75,7 +78,7 @@
   .whatsapp-widget-container {
     position: fixed;
     bottom: 65px;
-    right: 25px; 
+    right: 25px;
     z-index: 1000;
     font-family: Arial, sans-serif;
   }
@@ -96,14 +99,14 @@
   }
 
   .whatsapp-float-button:hover {
-    animation-play-state: paused; 
+    animation-play-state: paused;
   }
 
   .whatsapp-logo {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    object-fit: cover; 
+    object-fit: cover;
   }
 
   .notification-dot {
@@ -145,7 +148,7 @@
     display: flex;
     align-items: center;
     padding: 15px;
-    background-color: #e7ddd2;
+    background-color: #075e54;
     position: relative;
   }
 
@@ -156,40 +159,51 @@
     background: none;
     border: none;
     font-size: 24px;
-    color: #54656f;
     cursor: pointer;
+    color: rgb(200, 200, 200);
     opacity: 0.7;
   }
 
   .close-btn:hover {
+    color: rgb(200, 200, 200);
     opacity: 1;
   }
 
-  .whatsapp-profile img {
+  .whatsapp-profile {
     width: 45px;
     height: 45px;
+    background-color: black;
+    overflow: hidden;
     border-radius: 50%;
     margin-right: 15px;
     border: 2px solid #fff;
+  }
+
+  .whatsapp-profile img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 
   .whatsapp-profile-info h3 {
     margin: 0;
     font-size: 16px;
     font-weight: 600;
-    color: #111b21;
+    color: white;
   }
 
   .whatsapp-profile-info p {
     margin: 0;
     font-size: 13px;
-    color: #54656f;
+    color: rgb(200, 200, 200);
   }
 
   .chat-body {
     padding: 50px 15px;
     background-color: #efeae2;
     background-image: url("https://res.cloudinary.com/daoju0r3c/image/upload/v1753454787/whatsappbg_aiflr7.jpg");
+    background-size: 85% auto;
     flex-grow: 1;
   }
 
@@ -234,21 +248,21 @@
     gap: 10px;
     width: 100%;
     padding: 12px;
-    background-color: #e7ddd2;
+    background-color: #075e54;
     border-radius: 25px;
     text-decoration: none;
-    color: #111b21;
+    color: #c8c8c8;
     font-weight: 600;
     font-size: 15px;
     transition: background-color 0.2s ease;
   }
 
   .start-chat-btn:hover {
-    background-color: #d8c9bc;
+    background-color: #075e54;
   }
 
   .start-chat-btn svg {
-    stroke: #54656f;
+    stroke: #c8c8c8;
   }
 </style>
 
