@@ -60,8 +60,13 @@ Author URL: https://themeforest.net/user/ultimatewebsolutions/
 /* Common
 ==================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap"); Original*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* Defaults */
+
+:root {
+  --color-primary: #694f36;
+}
 
 *,
 *:after,
@@ -83,7 +88,7 @@ body {
   margin: 0;
   font-size: 16px;
   font-weight: 300;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .mry-text {
@@ -95,16 +100,16 @@ body {
 
 .mry-text a {
   text-decoration: underline;
-  color: #7e6422;
+  color: var(--color-primary);
 }
 
 .mry-text a:hover {
-  color: #7e6422;
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
 .mry-text .mry-color-text {
-  color: #7e6422;
+  color: var(--color-primary);
 }
 
 .mry-text.mry-simple-text {
@@ -141,7 +146,7 @@ h6 {
   padding: 0;
   color: #010d0d;
   font-weight: 800;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .mry-h1,
@@ -179,8 +184,9 @@ h6 {
 
 .mry-border-text {
   letter-spacing: 0;
-  -webkit-text-stroke-width: 2px;
-  -moz-text-stroke-width: 2px;
+  /* -webkit-text-stroke-width: 2px; Original */
+  -webkit-text-stroke-width: 1.25px;
+  -moz-text-stroke-width: 1.25px;
   -webkit-text-stroke-color: #010d0d;
   -moz-text-stroke-color: #010d0d;
   color: transparent !important;
@@ -245,7 +251,7 @@ h6 {
   .mry-h3,
   h3 {
     font-size: 28px;
-    line-height: 30px;
+    /* line-height: 30px; Original */
   }
   .mry-h3 .mry-border-text,
   h3 .mry-border-text {
@@ -364,7 +370,7 @@ h6 {
 
 .mry-btn:hover,
 .mry-btn-text:hover {
-  color: #7e6422;
+  color: var(--color-primary);
 }
 
 .mry-btn-text {
@@ -389,7 +395,7 @@ h6 {
 }
 
 .mry-link:hover {
-  color: #7e6422;
+  color: var(--color-primary);
 }
 
 /* Space */
@@ -501,7 +507,7 @@ h6 {
 .mry-app .mry-preloader .mry-preloader-content .mry-loader-bar .mry-loader {
   height: 100%;
   width: 0;
-  background-color: #7e6422;
+  background-color: var(--color-primary);
   transition-timing-function: ease-in;
 }
 
@@ -534,7 +540,8 @@ h6 {
 }
 
 .mry-app .mry-top-panel .mry-logo-frame .mry-logo {
-  width: 80px;
+  /* width: 80px; Original */
+  width: 124px;
 }
 
 /* Menu Button */
@@ -658,12 +665,13 @@ h6 {
   font-size: 34px;
   display: inline-block;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; Original */
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
 }
 
 .mry-menu nav ul .menu-item.current-menu-item a {
-  color: #7e6422;
+  color: var(--color-primary);
 }
 
 .mry-menu nav ul .menu-item .sub-menu {
@@ -811,7 +819,7 @@ html.is-rendering body .mry-ball svg {
 
 html.is-animating body .mry-ball svg path,
 html.is-rendering body .mry-ball svg path {
-  fill: #7e6422;
+  fill: var(--color-primary);
 }
 
 @keyframes loading {
@@ -929,7 +937,7 @@ html.is-animating .transition-fade .mry-loading-curtain {
   content: "";
   width: 30px;
   height: 3px;
-  background-color: #7e6422;
+  background-color: var(--color-primary);
   border-radius: 3px;
   position: absolute;
   left: 0;
@@ -1213,7 +1221,7 @@ html.is-animating .transition-fade .mry-loading-curtain {
   .mry-slider-pagination
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 20px;
-  background-color: #7e6422;
+  background-color: var(--color-primary);
 }
 
 .mry-slider-nav-panel {
@@ -1255,7 +1263,7 @@ html.is-animating .transition-fade .mry-loading-curtain {
   position: absolute;
   top: 0;
   left: 0;
-  background: #7e6422;
+  background: var(--color-primary);
   border-radius: 3px;
   height: 100%;
   width: 0;
@@ -1562,7 +1570,7 @@ html.is-animating .transition-fade .mry-loading-curtain {
 }
 
 .mry-star-rate li i {
-  color: #7e6422;
+  color: var(--color-primary);
   font-size: 14px;
 }
 
@@ -1592,7 +1600,7 @@ html.is-animating .transition-fade .mry-loading-curtain {
 }
 
 .mry-pagination li.mry-active {
-  background-color: #7e6422;
+  background-color: var(--color-primary);
 }
 
 .mry-pagination li.mry-active a {
@@ -1642,7 +1650,7 @@ html.is-animating .transition-fade .mry-loading-curtain {
 
 .mry-form input:focus,
 .mry-form textarea:focus {
-  border-color: #7e6422;
+  border-color: var(--color-primary);
 }
 
 .mry-form input {
@@ -1804,7 +1812,7 @@ blockquote:after {
 }
 
 .mry-filter .mry-card-category.mry-current {
-  color: #7e6422;
+  color: var(--color-primary);
 }
 
 /* Work Item */
@@ -2013,7 +2021,7 @@ blockquote:after {
     margin-right: 0;
   }
   .mry-filter .mry-card-category.mry-current {
-    color: #7e6422;
+    color: var(--color-primary);
   }
 }
 
@@ -2074,7 +2082,7 @@ blockquote:after {
 }
 
 .mapboxgl-marker svg g {
-  fill: #7e6422;
+  fill: var(--color-primary);
 }
 
 .mapboxgl-marker svg circle {
@@ -2195,7 +2203,7 @@ blockquote:after {
 }
 
 .fancybox-progress {
-  background: #7e6422;
+  background: var(--color-primary);
   z-index: 999999999999999999;
 }
 
@@ -2204,7 +2212,7 @@ blockquote:after {
 }
 
 .fancybox-thumbs__list a:before {
-  border-color: #7e6422;
+  border-color: var(--color-primary);
   transition: 0.4s ease-in-out;
 }
 
@@ -2240,7 +2248,7 @@ blockquote:after {
 }
 
 .scrollbar-track .scrollbar-thumb {
-  background-color: #7e6422 !important;
+  background-color: var(--color-primary) !important;
   opacity: 1 !important;
   width: 5px !important;
 }

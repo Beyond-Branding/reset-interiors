@@ -1,0 +1,49 @@
+---
+const { imageUrl, projectUrl } = Astro.props as {
+  imageUrl: string;
+  projectUrl: string;
+};
+---
+
+<div class="swiper-slide">
+  <div class="mry-project-slider-item">
+    <div class="mry-project-frame mry-project-half">
+      <div class="mry-cover-frame">
+        <img
+          class="mry-project-cover mry-position-right"
+          src={imageUrl}
+          alt="Project"
+          data-swiper-parallax="500"
+          data-swiper-parallax-scale="1.4"
+        />
+        <div class="mry-cover-overlay"></div>
+        <div class="mry-loading-curtain"></div>
+      </div>
+      <div class="mry-main-title-frame">
+        <div class="container">
+          <div
+            class="mry-main-title"
+            data-swiper-parallax-x="30%"
+            data-swiper-parallax-scale=".7"
+            data-swiper-parallax-opacity="0"
+            data-swiper-parallax-duration="1000"
+          >
+            <h3 class="mry-mb-30" style="font-size: 36px;">
+              <slot name="title" />
+            </h3>
+            <div class="mry-text mry-mb-30" style="font-size: 1rem;">
+              <slot name="subtitle" />
+            </div>
+            <a class="mry-btn mry-default-link mry-anima-link" href={projectUrl}
+              >Open Case</a
+            >
+            <a
+              class="mry-btn-text mry-default-link mry-anima-link"
+              href="/our-work">All Projects</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

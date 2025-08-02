@@ -300,12 +300,14 @@ nav {
   margin-top: 2px;
 }
 nav > ul > li {
-  display: inline-block;
+  /* display: inline-block; Original */
+  display: block;
   margin-right: 40px;
   position: relative;
 }
 nav ul li a {
   display: inline-block;
+  display: block;
   color: #070c1f;
   font-size: 15px;
   font-weight: 500;

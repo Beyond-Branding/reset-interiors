@@ -1,369 +1,105 @@
 ---
+import SliderItem from "@/components/SliderItem.astro";
 import MainLayout from "../lib/layouts/main-layout.astro";
 ---
 
 <MainLayout disableFooter>
-  <div class="transition-fade">
-    <div class="mry-content-frame">
-      <canvas class="mry-dots"></canvas>
+  <div class="mry-content-frame" id="scroll">
+    <canvas class="mry-dots"></canvas>
 
-      <div class="swiper-container mry-main-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="mry-project-slider-item">
-              <div class="mry-project-frame mry-project-half">
-                <div class="mry-cover-frame">
-                  <img
-                    class="mry-project-cover mry-position-right"
-                    src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753637146/3_txberc.png"
-                    alt="Project"
-                    data-swiper-parallax="500"
-                    data-swiper-parallax-scale="1.4"
-                  />
-                  <div class="mry-cover-overlay"></div>
-                  <div class="mry-loading-curtain"></div>
-                </div>
-                <div class="mry-main-title-frame">
-                  <div class="container">
-                    <div
-                      class="mry-main-title"
-                      data-swiper-parallax-x="30%"
-                      data-swiper-parallax-scale=".7"
-                      data-swiper-parallax-opacity="0"
-                      data-swiper-parallax-duration="1000"
-                    >
-                      <h3 class="mry-mb-30" style="font-size: 36px;">
-                        Designing the Heart<br /><span class="mry-border-text">of the Home</span>
-                      </h3>
-                      <div class="mry-text mry-mb-30" style="font-size: 18px;">
-                        From cozy charm to modern minimalism, expert <br />design turns your living room into a space that<br /> reflects your lifestyle and personality
-                      </div>
-                      <a
-                        class="mry-btn mry-default-link mry-anima-link"
-                        href="/ourworkpages/Cambridge/">Open Case</a
-                      >
-                      <a
-                        class="mry-btn-text mry-default-link mry-anima-link"
-                        href="/our-work">All Projects</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="mry-project-slider-item">
-              <div class="mry-project-frame mry-project-half">
-                <div class="mry-cover-frame">
-                  <img
-                    class="mry-project-cover"
-                    src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753638047/compressed_3_ieaium.png"
-                    alt="Project"
-                    data-swiper-parallax="500"
-                    data-swiper-parallax-scale="1.4"
-                  />
-                  <div class="mry-cover-overlay"></div>
-                </div>
-                <div class="mry-main-title-frame">
-                  <div class="container">
-                    <div
-                      class="mry-main-title"
-                      data-swiper-parallax-x="30%"
-                      data-swiper-parallax-scale=".7"
-                      data-swiper-parallax-opacity="0"
-                      data-swiper-parallax-duration="1000"
-                    >
-                      <h3 class="mry-mb-30" style="font-size: 25px;">
-                        Transforming Bedrooms Into<br /><span class="mry-border-text" style="font-size: 30px;">Elevated Living Spaces</span>
-                      </h3>
-                      <div class="mry-text mry-mb-30" style="font-size: 18px;">
-                        As your personal sanctuary, the bedroom deserves <br> a design that harmonizes comfort, elegance, and <br> tranquility—crafted for rest and renewal.
-                      </div>
-                      <a
-                        class="mry-btn mry-default-link mry-anima-link"
-                        href="/ourworkpages/Cambridge/">Open Case</a
-                      >
-                      <a
-                        class="mry-btn-text mry-default-link mry-anima-link"
-                        href="/our-work">All Projects</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="mry-project-slider-item">
-              <div class="mry-project-frame mry-project-half">
-                <div class="mry-cover-frame">
-                  <img
-                    class="mry-project-cover"
-                    src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753638231/study_awn2sa.jpg"
-                    alt="Project"
-                    data-swiper-parallax="500"
-                    data-swiper-parallax-scale="1.4"
-                  />
-                  <div class="mry-cover-overlay"></div>
-                </div>
-                <div class="mry-main-title-frame">
-                  <div class="container">
-                    <div
-                      class="mry-main-title"
-                      data-swiper-parallax-x="30%"
-                      data-swiper-parallax-scale=".7"
-                      data-swiper-parallax-opacity="0"
-                      data-swiper-parallax-duration="1000"
-                    >
-                      <h3 class="mry-mb-30" style="font-size: 33px;">
-                        Curating Study Rooms<br /><span class="mry-border-text">into Elegant Interiors</span>
-                      </h3>
-                      <div class="mry-text mry-mb-30" style="font-size: 18px;">
-                        Designed for focus and inspiration, our study rooms <br> combine sleek aesthetics with smart functionality. <br> Clean lines, organized storage, and soothing tones <br> create a  modern space that’s perfect for working, <br> studying, or  simply enjoying a quiet reading nook.
-                      </div>
-                      <a
-                        class="mry-btn mry-default-link mry-anima-link"
-                        href="/ourworkpages/Cambridge/">Open Case</a
-                      >
-                      <a
-                        class="mry-btn-text mry-default-link mry-anima-link"
-                        href="/our-work">All Projects</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="mry-project-slider-item">
-              <div class="mry-project-frame mry-project-half">
-                <div class="mry-cover-frame">
-                  <img
-                    class="mry-project-cover"
-                    src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753638399/kitchen_y2wddw.jpg"
-                    alt="Project"
-                    data-swiper-parallax="500"
-                    data-swiper-parallax-scale="1.4"
-                  />
-                  <div class="mry-cover-overlay"></div>
-                </div>
-                <div class="mry-main-title-frame">
-                  <div class="container">
-                    <div
-                      class="mry-main-title"
-                      data-swiper-parallax-x="30%"
-                      data-swiper-parallax-scale=".7"
-                      data-swiper-parallax-opacity="0"
-                      data-swiper-parallax-duration="1000"
-                    >
-                      <h3 class="mry-mb-30" style="font-size: 36px;">
-                        Inspiring Spaces<br /><span class="mry-border-text"
-                          >Timeless Kitchens</span
-                        ><span class="mry-animation-el"></span>
-                      </h3>
-                      <div class="mry-text mry-mb-30" style="font-size: 18px;">
-                        Beyond cooking, the kitchen is a space where <br> memories  are made and stories are shared. Make <br> every moment meaningful.
-                      </div>
-                      <a
-                        class="mry-btn mry-default-link mry-anima-link"
-                        href="/ourworkpages/hiltontower/">Open Case</a
-                      >
-                      <a
-                        class="mry-btn-text mry-default-link mry-anima-link"
-                        href="/our-work">All Projects</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="swiper-container mry-main-slider">
+      <div class="swiper-wrapper">
+        <SliderItem
+          imageUrl="https://res.cloudinary.com/daoju0r3c/image/upload/v1753637146/3_txberc.png"
+          projectUrl="/ourworkpages/Cambridge/"
+        >
+          <Fragment slot="title">
+            Designing the <br /><span class="mry-border-text"
+              >Heart of the Home</span
+            >
+          </Fragment>
+          <Fragment slot="subtitle">
+            From cozy charm to modern minimalism, expert <br />design turns your
+            living room into a space that<br /> reflects your lifestyle and personality.
+          </Fragment>
+        </SliderItem>
+
+        <SliderItem
+          imageUrl="https://res.cloudinary.com/daoju0r3c/image/upload/v1753638047/compressed_3_ieaium.png"
+          projectUrl="/ourworkpages/Cambridge/"
+        >
+          <Fragment slot="title">
+            Transforming <br />Bedrooms Into <br />
+            <span class="mry-border-text">Elevated Living<br /> Spaces</span>
+          </Fragment>
+          <Fragment slot="subtitle">
+            As your personal sanctuary, the bedroom deserves <br /> a design that
+            harmonizes comfort, elegance, and <br /> tranquility—crafted for rest
+            and renewal.
+          </Fragment>
+        </SliderItem>
+
+        <SliderItem
+          projectUrl="/ourworkpages/Cambridge/"
+          imageUrl="https://res.cloudinary.com/daoju0r3c/image/upload/v1753638231/study_awn2sa.jpg"
+        >
+          <Fragment slot="title">
+            Curating Study <br />Rooms into <span class="mry-border-text"
+              ><br /> Elegant Interiors</span
+            >
+          </Fragment>
+          <Fragment slot="subtitle">
+            Designed for focus and inspiration, our study rooms <br /> combine sleek
+            aesthetics with smart functionality. <br /> Clean lines, organized storage,
+            and soothing tones <br /> create a modern space that’s perfect for working,
+            <br /> studying, or simply enjoying a quiet reading nook.
+          </Fragment>
+        </SliderItem>
+
+        <SliderItem
+          projectUrl="/ourworkpages/hiltontower/"
+          imageUrl="https://res.cloudinary.com/daoju0r3c/image/upload/v1753638399/kitchen_y2wddw.jpg"
+        >
+          <Fragment slot="title">
+            Inspiring Spaces<br /><span class="mry-border-text"
+              >Timeless Kitchens</span
+            >
+          </Fragment>
+
+          <Fragment slot="subtitle">
+            Beyond cooking, the kitchen is a space where <br /> memories are made
+            and stories are shared. Make <br /> every moment meaningful.
+          </Fragment>
+        </SliderItem>
+      </div>
+    </div>
+
+    <div class="mry-slider-pagination-frame">
+      <div class="mry-slider-pagination"></div>
+    </div>
+
+    <div class="mry-slider-nav-panel">
+      <div class="container">
+        <div class="mry-slider-progress-bar-frame">
+          <div class="mry-slider-progress-bar">
+            <div class="mry-progress"></div>
           </div>
         </div>
       </div>
 
-      <div class="mry-slider-pagination-frame">
-        <div class="mry-slider-pagination"></div>
-      </div>
-
-      <div class="mry-slider-nav-panel">
-        <div class="container">
-          <div class="mry-slider-progress-bar-frame">
-            <div class="mry-slider-progress-bar">
-              <div class="mry-progress"></div>
-            </div>
-          </div>
+      <div class="mry-slider-arrows">
+        <div class="mry-label">Slider Navigation</div>
+        <div class="mry-button-prev mry-magnetic-link">
+          <span class="mry-magnetic-object"
+            ><i class="fas fa-arrow-left"></i></span
+          >
         </div>
-
-        <div class="mry-slider-arrows">
-          <div class="mry-label">Slider Navigation</div>
-          <div class="mry-button-prev mry-magnetic-link">
-            <span class="mry-magnetic-object"
-              ><i class="fas fa-arrow-left"></i
-            ></span>
-          </div>
-          <div class="mry-button-next mry-magnetic-link">
-            <span class="mry-magnetic-object"
-              ><i class="fas fa-arrow-right"></i
-            ></span>
-          </div>
+        <div class="mry-button-next mry-magnetic-link">
+          <span class="mry-magnetic-object"
+            ><i class="fas fa-arrow-right"></i></span
+          >
         </div>
       </div>
     </div>
   </div>
 </MainLayout>
-
-<style>
-   /* @import url('https://fonts.cdnfonts.com/css/modern-sans');
-  :global(body) {
-    font-family: 'Modern Sans', sans-serif;
-} */
-
-  .mry-progress {
-    background-color: #684F36
-; 
-  }
-
-  @media (max-width: 992px) {
-
-    :root {
-      --mobile-card-overlap: -100px;
-      --mobile-card-width: 95%;
-
-      --mobile-card-top-padding: 0px;
-      --mobile-card-side-padding: 20px;
-      --mobile-card-bottom-padding: 20px;
-
-      --mobile-title-fontsize: 15px;
-      --mobile-title-lineheight: 1.4;
-      --mobile-content-spacing: 20px;
-    }
-
-
-    .mry-project-frame.mry-project-half {
-      padding-bottom: 30px;
-      position: relative;
-    }
-
-    .mry-project-half .mry-cover-frame {
-      width: 100%;
-      height: 50vh;
-      position: relative;
-    }
-
-    .mry-project-half .mry-project-cover {
-      position: absolute !important;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    
-    .mry-project-half .mry-main-title-frame {
-      position: relative;
-      z-index: 10;
-      margin-left: auto;
-      margin-right: auto;
-      background-color: #ffffff;
-      box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.15);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center;
-      
-      width: var(--mobile-card-width);
-      margin-top: var(--mobile-card-overlap);
-      padding: var(--mobile-card-top-padding) var(--mobile-card-side-padding) var(--mobile-card-bottom-padding);
-    }
-
-    .mry-content-frame {
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .swiper-container {
-      order: 1;
-      position: relative;
-      z-index: 2;
-    }
-
-    .mry-slider-nav-panel {
-      order: 2;
-    }
-
-    .mry-slider-pagination-frame {
-      order: 3;
-    }
-    
-    .mry-slider-nav-panel {
-      position: relative;
-      height: auto;
-      margin-top: 0;
-    }
-    
-    .mry-slider-progress-bar-frame,
-    .mry-slider-arrows .mry-label {
-      display: none;
-    }
-
-    .mry-bottom-mobile-buttons {
-      display: none; /* Hide placeholder div */
-    }
-    
-    .mry-slider-arrows {
-      position: static;
-      transform: none;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 20px; 
-      padding: 20px 0;
-    }
-    
-    .mry-main-title {
-      transform: none !important;
-      opacity: 1 !important;
-    }
-    
-    .mry-main-title-frame .container {
-      width: 100%;
-      padding: 0;
-    }
-
-    .mry-main-title .mry-subtitle {
-      display: none;
-    }
-
-    .mry-main-title h1,
-    .mry-main-title h2,
-    .mry-main-title h3 {
-      font-size: var(--mobile-title-fontsize);
-      line-height: var(--mobile-title-lineheight);
-      margin-top: 0;
-    }
-
-    .mry-main-title .mry-mb-30 {
-      margin-bottom: var(--mobile-content-spacing) !important;
-    }
-    
-    .mry-main-title .mry-btn-text {
-        margin-left: 15px;
-    }
-
-    .mry-bottom-mobile-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-        margin: 20px 0;
-    }
-
-    .mry-bottom-mobile-buttons a {
-      font-size: 10px;
-      padding: 4px 8px;
-      text-decoration: none;
-    }
-  }
-</style>
