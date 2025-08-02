@@ -56,7 +56,7 @@ input:checked + .slider,
 .thecube .cube:before,
 .failed,
 .text-info {
-  background-color: #7e6422;
+  background-color: var(--color-primary);
 }
 
 .proz-mint:after,

@@ -85,6 +85,8 @@ const { disableFooter = false } = Astro.props as {
     <!-- main css -->
     <link rel="stylesheet" href="/mireya/css/style-light.css" />
 
+    <slot name="head" />
+
     <title>Reset Interiors</title>
   </head>
 
@@ -239,13 +241,15 @@ const { disableFooter = false } = Astro.props as {
       </div>
     </div>
 
-    <script defer src="/minteriors/assets/js/popper.js"></script>
-    <script defer src="/minteriors/assets/js/bootstrap.min.js"></script>
-    <script defer src="/minteriors/assets/js/plugin/slick.min.js"></script>
-    <script defer src="/minteriors/assets/js/plugin/html5lightbox.js"></script>
-    <script defer src="/minteriors/assets/js/placeholdem.min.js"></script>
-    <script defer src="/minteriors/assets/js/wow.min.js"></script>
-    <script defer src="/minteriors/assets/js/script.js"></script>
+    <WhatsAppWidget />
+
+    <script defer src="/minterior/assets/js/popper.js"></script>
+    <script defer src="/minterior/assets/js/bootstrap.min.js"></script>
+    <script defer src="/minterior/assets/js/plugin/slick.min.js"></script>
+    <script defer src="/minterior/assets/js/plugin/html5lightbox.js"></script>
+    <script defer src="/minterior/assets/js/placeholdem.min.js"></script>
+    <script defer src="/minterior/assets/js/wow.min.js"></script>
+    <script defer src="/minterior/assets/js/script.js"></script>
 
     <!-- jquery js -->
     <script defer src="/mireya/js/plugins/jquery.min.js"></script>
@@ -273,8 +277,6 @@ const { disableFooter = false } = Astro.props as {
     <script defer src="/mireya/js/plugins/parsley.min.js"></script>
     <!-- main js -->
     <script defer src="/mireya/js/main.js"></script>
-
-    <WhatsAppWidget />
   </body>
 
   <!-- Mirrored from ultimatewebsolutions.net/mireya/light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Jul 2025 15:53:18 GMT -->

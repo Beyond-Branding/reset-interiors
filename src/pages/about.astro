@@ -3,88 +3,114 @@ import MainLayout from "../lib/layouts/main-layout.astro";
 ---
 
 <MainLayout>
-  <section class="hero-about">
-    <div class="fixed-bg bg1"></div>
-
-    <div class="container">
-      <div class="hero-about__grid">
-        <div class="hero-about__text">
-          <ul class="breadcrumb">
-            <li><a href="/" title="">Home</a></li>
-            <li><span>About Us</span></li>
-          </ul>
-          <br>
+  <div class="transition-fade" id="scroll">
+    <section class="pager-section">
+      <div class="container">
+        <div class="pager-info">
           <h3 style="font-size: 48px;">About Us</h3>
+          <!-- <span>Please review our services</span> -->
         </div>
-        <div class="hero-about__image">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block2">
-    <div class="container about-flex-container">
-      <div class="about-text-wrapper">
-        <h3 class="sub-title">History</h3>
-        <p>
-          What began as a childhood curiosity has grown into a passion for designing spaces that feel alive and tell their own stories. My journey in interior design has been about blending beauty with comfort, creating rooms that don’t just look elegant but also feel warm and meaningful. Every project is a chance to turn everyday spaces into places where memories are made and life feels a little more inspiring.
-          <br>“Designing spaces, crafting emotions, and shaping stories within walls.”
-        </p>
-      </div>
-      <div class="about-image-wrapper">
-        <img
-          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754120390/A5_f8xyvs.jpg"
-          alt="Beautiful living room"
-        />
-      </div>
-    </div>
-  </section>
-
-  <section class="block2 my-4 py-3">
-    <div class="fixed-bg bg1"></div>
-    <div class="container about-flex-container about-me-layout">
-      <div class="about-image-wrapper">
-        <img
-          src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753411964/founder_xvmucl.jpg"
-          alt="Founder"
-        />
-        <div class="image-caption">
-          <h3>Charmi Gogri</h3>
-          <span><h4>Founder</h4></span>
-        </div>
-      </div>
-      <div class="about-text-wrapper">
-        <h3 class="sub-title">About Me</h3>
-        <p style="text-align: justify; font-size: 14px; line-height: 1.8;">
-          My journey in interior design began with a childhood fascination for transforming empty rooms into inviting spaces, which led to two years of formal education in the field. I then gained three years of hands-on experience at a leading interior and architecture firm, focusing on site execution and project management. In 2016, I launched my first firm, starting solo and eventually building a team of five, united by a shared commitment to thoughtful, functional design.
-          A transformative three-year period in Hong Kong exposed me to a rich blend of traditional and modern aesthetics, enhancing my ability to work across diverse markets. In 2022, I founded my second firm with a clear vision: to create interiors that do more than appeal visually—they should feel right and support well-being. I approach each project with the belief that design deeply influences how we live, aiming to shape spaces that inspire, uplift, and connect.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <div class="block2">
-    <div class="container">
-      <div class="arch-section">
-        <div class="row">
-          <div class="col-lg-4">
-            <h3 class="sub-title m-0">
-              Architects <br />with different approach
-            </h3>
+        <div class="pger-imgs style2">
+          <div class="abt-imgz">
+            <video autoplay loop muted playsinline width="100%">
+              <source
+                src="https://res.cloudinary.com/daoju0r3c/video/upload/v1753735392/servicesfull_w1ixvy.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <div class="col-lg-8">
-            <div class="our-awards-sec">
-              <div class="row" style="justify-content: center;">
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                  <div class="award-col">
-                    <h2 class="count">10</h2>
-                    <h3>Awards gained</h3>
+        </div><!--pger-imgs end-->
+        <div class="clearfix"></div>
+      </div>
+    </section>
+
+    <section class="block2">
+      <div class="container about-flex-container">
+        <div class="about-text-wrapper">
+          <h3 class="sub-title">History</h3>
+          <p>
+            What began as a childhood curiosity has grown into a passion for
+            designing spaces that feel alive and tell their own stories. My
+            journey in interior design has been about blending beauty with
+            comfort, creating rooms that don’t just look elegant but also feel
+            warm and meaningful. Every project is a chance to turn everyday
+            spaces into places where memories are made and life feels a little
+            more inspiring.
+            <br /><span class="quotes"
+              >“Designing spaces, crafting emotions, and shaping
+              stories within walls.”</span
+            >
+          </p>
+        </div>
+        <div class="about-image-wrapper">
+          <img
+            src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754120390/A5_f8xyvs.jpg"
+            alt="Beautiful living room"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="block2 my-4 py-3">
+      <div class="fixed-bg bg1"></div>
+      <div class="container about-flex-container about-me-layout">
+        <div class="about-image-wrapper">
+          <img
+            src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753411964/founder_xvmucl.jpg"
+            alt="Founder"
+          />
+          <div class="image-caption">
+            <h3>Charmi Gogri</h3>
+            <span><h4>Founder</h4></span>
+          </div>
+        </div>
+        <div class="about-text-wrapper">
+          <h3 class="sub-title">About Me</h3>
+          <p style="text-align: justify; font-size: 14px; line-height: 1.8;">
+            My journey in interior design began with a childhood fascination for
+            transforming empty rooms into inviting spaces, which led to two
+            years of formal education in the field. I then gained three years of
+            hands-on experience at a leading interior and architecture firm,
+            focusing on site execution and project management. In 2016, I
+            launched my first firm, starting solo and eventually building a team
+            of five, united by a shared commitment to thoughtful, functional
+            design. A transformative three-year period in Hong Kong exposed me
+            to a rich blend of traditional and modern aesthetics, enhancing my
+            ability to work across diverse markets. In 2022, I founded my second
+            firm with a clear vision: to create interiors that do more than
+            appeal visually—they should feel right and support well-being. I
+            approach each project with the belief that design deeply influences
+            how we live, aiming to shape spaces that inspire, uplift, and
+            connect.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="block2">
+      <div class="container">
+        <div class="arch-section">
+          <div class="row">
+            <div class="col-lg-4">
+              <h3 class="sub-title m-0">
+                Architects <br />with different approach
+              </h3>
+            </div>
+            <div class="col-lg-8">
+              <div class="our-awards-sec">
+                <div class="row" style="justify-content: center;">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="award-col">
+                      <h2 class="count">10</h2>
+                      <h3>Awards gained</h3>
+                    </div>
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                  <div class="award-col">
-                    <h2 class="count">315</h2>
-                    <h3>Happy customers</h3>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="award-col">
+                      <h2 class="count">315</h2>
+                      <h3>Happy customers</h3>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -93,273 +119,324 @@ import MainLayout from "../lib/layouts/main-layout.astro";
         </div>
       </div>
     </div>
-  </div>
 
-  <script>
-  function animateCountUp(element) {
-    const finalCount = parseInt(element.textContent, 10);
-    const duration = 4000; 
-    let startTime = null;
+    <script>
+      function animateCountUp(element) {
+        const finalCount = parseInt(element.textContent, 10);
+        const duration = 4000;
+        let startTime = null;
 
-    const step = (timestamp) => {
-      if (!startTime) startTime = timestamp;
-      const progress = timestamp - startTime;
-      const current = Math.min(Math.floor((progress / duration) * finalCount), finalCount);
-      element.textContent = current;
+        const step = (timestamp) => {
+          if (!startTime) startTime = timestamp;
+          const progress = timestamp - startTime;
+          const current = Math.min(
+            Math.floor((progress / duration) * finalCount),
+            finalCount
+          );
+          element.textContent = current;
 
-      if (progress < duration) {
+          if (progress < duration) {
+            window.requestAnimationFrame(step);
+          } else {
+            element.textContent = finalCount;
+          }
+        };
         window.requestAnimationFrame(step);
-      } else {
-        element.textContent = finalCount;
       }
-    };
-    window.requestAnimationFrame(step);
-  }
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const counters = entry.target.querySelectorAll('.count');
-        counters.forEach(counter => {
-          animateCountUp(counter);
-        });
-        observer.unobserve(entry.target);
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const counters = entry.target.querySelectorAll(".count");
+              counters.forEach((counter) => {
+                animateCountUp(counter);
+              });
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.5,
+        }
+      );
+
+      const sectionToWatch = document.querySelector(".arch-section");
+      if (sectionToWatch) {
+        observer.observe(sectionToWatch);
       }
-    });
-  }, {
-    threshold: 0.5
-  });
+    </script>
 
-  const sectionToWatch = document.querySelector('.arch-section');
-  if (sectionToWatch) {
-    observer.observe(sectionToWatch);
-  }
-</script>
-
-
-
-
-
-  <section class="vision-sec py-5">
-    <div class="fixed-bg bg1"></div>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7">
-          <div class="custom-image-layout">
-            <div class="img-box img1"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A2_ultc2o.jpg" alt="img1" /></div>
-            <div class="img-box img2"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A1_cwchor.jpg" alt="img2" /></div>
-            <div class="img-box img3"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A4_mkotch.jpg" alt="img3" /></div>
-            <div class="img-box img4"><img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067749/A3_nvoo65.jpg" alt="img4" /></div>
+    <section class="vision-sec py-5">
+      <div class="fixed-bg bg1"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="custom-image-layout">
+              <div class="img-box img1">
+                <img
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A2_ultc2o.jpg"
+                  alt="img1"
+                />
+              </div>
+              <div class="img-box img2">
+                <img
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A1_cwchor.jpg"
+                  alt="img2"
+                />
+              </div>
+              <div class="img-box img3">
+                <img
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A4_mkotch.jpg"
+                  alt="img3"
+                />
+              </div>
+              <div class="img-box img4">
+                <img
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067749/A3_nvoo65.jpg"
+                  alt="img4"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="vision-content mt-5 mt-lg-0">
-            <h2 style="font-size: 2.75rem; font-weight: 700; color: #684F36;">
-              Turn Your Dream <br />Home Into A Reality
-            </h2>
-            <p class="mt-3" style="font-size: 1rem; color: #333;">
-              We bring your vision to life with thoughtful design, expert craftsmanship,
-              and a deep understanding of what makes a house truly feel like home. From
-              concept to completion, we create personalized spaces that reflect your
-              style, needs, and dreams.
-            </p>
-            <a href="/contact" class="btn btn-outline-dark mt-4" style="padding: 10px 30px; border-radius: 40px; font-weight: 500;">
-              Contact Us
-            </a>
+          <div class="col-lg-5">
+            <div class="vision-content mt-5 mt-lg-0">
+              <h2 style="font-size: 2.75rem; font-weight: 700; color: #684F36;">
+                Turn Your Dream <br />Home Into A Reality
+              </h2>
+              <p class="mt-3" style="font-size: 1rem; color: #333;">
+                We bring your vision to life with thoughtful design, expert
+                craftsmanship, and a deep understanding of what makes a house
+                truly feel like home. From concept to completion, we create
+                personalized spaces that reflect your style, needs, and dreams.
+              </p>
+              <a
+                href="/contact"
+                class="btn btn-outline-dark mt-4"
+                style="padding: 10px 30px; font-weight: 500;"
+              >
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+
+  <Fragment slot="head">
+    <style>
+      .quotes {
+        display: block;
+        margin-top: 1rem;
+        font-size: 1.15rem;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      .custom-image-layout {
+        position: relative;
+        width: 100%;
+        height: 550px;
+      }
+
+      .count {
+        color: #684f36;
+      }
+
+      .vision-content .btn-outline-dark:hover {
+        background-color: #684f36;
+        border-color: #684f36;
+        color: #fff;
+      }
+
+      .img-box {
+        position: absolute;
+        /* border-radius: 10px; */
+        overflow: hidden;
+      }
+
+      .img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .img1 {
+        top: 248px;
+        left: 50px;
+        width: 132px;
+        height: 102px;
+      }
+      .img2 {
+        top: 50px;
+        left: 200px;
+        width: 406px;
+        height: 300px;
+      }
+      .img3 {
+        bottom: 0;
+        left: 0;
+        width: 280px;
+        height: 190px;
+      }
+      .img4 {
+        top: 360px;
+        left: 300px;
+        width: 160px;
+        height: 120px;
+      }
+
+      .fixed-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      /* === Styles for the Hero Section === */
+      .hero-about {
+        position: relative;
+        padding: 120px 0;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .hero-about::after {
+        content: "";
+        position: absolute;
+        bottom: 15%;
+        right: 25%;
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        /* border-radius: 50%; */
+      }
+
+      .hero-about__grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
+      .hero-about__text,
+      .hero-about__image {
+        flex-basis: 48%;
+        min-width: 350px;
+      }
+
+      .hero-about__text {
+        position: relative;
+      }
+
+      .hero-about__text::after {
+        display: none;
+      }
+
+      .hero-about__text h2 {
+        font-size: 5rem;
+        font-weight: 700;
+        margin: 0.5rem 0;
+        color: #1a1a1a;
+        line-height: 1.1;
+      }
+
+      .hero-about__text .breadcrumb {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        background: transparent !important;
+      }
+
+      .hero-about__text .breadcrumb li,
+      .hero-about__text .breadcrumb a {
+        color: #6c757d;
+        text-decoration: none;
+        font-size: 1rem;
+        text-transform: none;
+      }
+
+      .hero-about__text .breadcrumb li + li::before {
+        content: "/";
+        margin: 0 0.75rem;
+      }
+
+      .hero-about__image img {
+        width: 100%;
+        height: auto;
+        /* border-radius: 8px; */
+      }
+
+      .about-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .about-text-wrapper,
+      .about-image-wrapper {
+        flex-basis: 48%;
+        min-width: 350px;
+      }
+
+      .about-text-wrapper {
+        order: 1;
+      }
+      .about-image-wrapper {
+        order: 2;
+      }
+
+      .about-image-wrapper img {
+        width: 100%;
+        height: auto;
+        display: block;
+        /* border-radius: 24px; */
+      }
+
+      .about-me-layout .about-text-wrapper {
+        order: 2;
+        flex-basis: 55%;
+      }
+      .about-me-layout .about-image-wrapper {
+        order: 1;
+        flex-basis: 40%;
+      }
+
+      .image-caption {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .image-caption h3 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #684f36;
+      }
+      .image-caption span {
+        font-size: 0.9rem;
+        color: #777;
+      }
+
+      .abt-imgz {
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 800px;
+      }
+
+      .block2,
+      .consultation-sec {
+        padding: 96px 0;
+      }
+    </style>
+  </Fragment>
 </MainLayout>
-
-
-<style>
-  
-
-  .custom-image-layout {
-    position: relative;
-    width: 100%;
-    height: 550px; 
-  }
-
-  .count {
-  color: #684F36;
-}
-
-  .vision-content .btn-outline-dark:hover {
-  background-color: #684F36;
-  border-color: #684F36;
-  color: #fff;
-}
-
-  .img-box {
-    position: absolute;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  .img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .img1 { top: 248px; left: 50px; width: 132px; height: 102px; }
-  .img2 { top: 50px; left: 200px; width: 406px; height: 300px; }
-  .img3 { bottom: 0; left: 0; width: 280px; height: 190px; }
-  .img4 { top: 360px; left: 300px; width: 160px; height: 120px; }
-
-
-  .fixed-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-
-  /* === Styles for the Hero Section === */
-  .hero-about {
-    position: relative;
-    padding: 120px 0;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .hero-about::after {
-    content: '';
-    position: absolute;
-    bottom: 15%;
-    right: 25%;
-    width: 50px;
-    height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 50%;
-  }
-
-  .hero-about__grid {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-
-  .hero-about__text,
-  .hero-about__image {
-    flex-basis: 48%;
-    min-width: 350px;
-  }
-
-  .hero-about__text {
-    position: relative;
-  }
-  
-  .hero-about__text::after {
-    display: none;
-  }
-
-  .hero-about__text h2 {
-    font-size: 5rem;
-    font-weight: 700;
-    margin: 0.5rem 0;
-    color: #1a1a1a;
-    line-height: 1.1;
-  }
-
-  .hero-about__text .breadcrumb {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    background: transparent !important;
-  }
-
-  .hero-about__text .breadcrumb li,
-  .hero-about__text .breadcrumb a {
-    color: #6c757d;
-    text-decoration: none;
-    font-size: 1rem;
-    text-transform: none;
-  }
-
-  .hero-about__text .breadcrumb li+li::before {
-    content: '/';
-    margin: 0 0.75rem;
-  }
-
-  .hero-about__image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .about-flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem; 
-  }
-
-  .about-text-wrapper,
-  .about-image-wrapper {
-    flex-basis: 48%;
-    min-width: 350px;
-  }
-
-  .about-text-wrapper {
-    order: 1; 
-  }
-  .about-image-wrapper {
-    order: 2; 
-  }
-
-  .about-image-wrapper img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 24px; 
-  }
-
-  .about-me-layout .about-text-wrapper {
-    order: 2; 
-    flex-basis: 55%; 
-  }
-  .about-me-layout .about-image-wrapper {
-    order: 1; 
-    flex-basis: 40%;
-  }
-
-  .image-caption {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .image-caption h3 {
-    margin: 0;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #684F36;
-  }
-  .image-caption span {
-    font-size: 0.9rem;
-    color: #777;
-  }
-
-
-  .abt-imgz {
-    margin-bottom: 30px;
-    width: 100%;
-    max-width: 800px; 
-  }
-
-  .block2,
-  .consultation-sec {
-    padding: 50px 0;
-  }
-</style>

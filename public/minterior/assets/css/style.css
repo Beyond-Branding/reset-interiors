@@ -1465,7 +1465,8 @@ div#html5-image {
 /* PAGER SECTION */
 
 .pager-section {
-  padding: 250px 0 0;
+  /* padding: 250px 0 0; Original */
+  padding: 172px 0 0;
   background-image: url(../images/pager-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1750,7 +1751,7 @@ div#html5-image {
 }
 
 .pger-imgs.style2 {
-  width: auto;
+  /* width: auto; Original */
   margin-bottom: -75px;
 }
 .pger-imgs.style2:before {
@@ -3104,4 +3105,30 @@ header.sticky.header-bg nav > ul > li {
 }
 .text-info {
   color: #fff !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .pager-section .container {
+    padding-top: 72px;
+  }
+
+  .pager-info h3 {
+    margin-bottom: 1.75rem;
+  }
+
+  .pger-imgs {
+    display: block !important;
+    width: unset;
+  }
+
+  .pger-imgs::before {
+    width: 270px;
+    height: 164px;
+  }
+
+  .pger-imgs.style2::before {
+    right: -13px;
+    bottom: 13px;
+  }
 }
