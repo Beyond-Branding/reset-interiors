@@ -1,0 +1,23 @@
+---
+const { title, thumbnailUrl, projectUrl } = Astro.props as {
+  title: string;
+  thumbnailUrl: string;
+  projectUrl: string;
+};
+---
+
+<a href={projectUrl}>
+  <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+    <div class="mry-card-item">
+      <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+        <img src={thumbnailUrl} alt="project" />
+        <div class="mry-cover-overlay"></div>
+      </div>
+      <div class="mry-item-descr mry-fo">
+        <h4 class="mry-mb-10">
+          <p>{title}</p>
+        </h4>
+      </div>
+    </div>
+  </div>
+</a>
