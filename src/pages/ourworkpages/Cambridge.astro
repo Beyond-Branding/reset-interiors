@@ -6,40 +6,36 @@ import MainLayout from '../../lib/layouts/main-layout.astro';
 
   <body>
 
-      <!-- <div class="transition-fade">
-        <div class="mry-content-frame" id="scroll">
-          
+      
 
-          <div class="mry-head-bg">
+          <div class="mry-banner mry-p-100-0">
+        <div class="mry-head-bg">
             <img
-              src="/mireya/img/light/projects/prjct-6/1.jpg"
-              alt="background"
+            src="/mireya/img/light/projects/prjct-6/1.jpg"
+            alt="background"
             />
             <div class="mry-bg-overlay"></div>
-          </div> -->
+        </div>
 
-          <div class="mry-banner mry-p-140-0">
-            <div class="container">
-              <div class="mry-main-title mry-title-center">
-                <!-- <div class="mry-subtitle mry-mb-20 mry-fo">Kitchen</div> -->
-                <h1 class="mry-mb-20 mry-fo">
-                  15A3<br /><span class="mry-border-text"
-                    >Cambridge Court</span
-                  ><span class="mry-animation-el"></span>
-                </h1>
-                <!-- <div class="mry-text mry-fo">Kitchen</div> -->
-                <div class="mry-scroll-hint-frame">
-                  <a
-                    class="mry-scroll-hint mry-smooth-scroll mry-magnetic-link mry-fo"
-                    href="#mry-anchor"
-                  >
-                    <span class="mry-magnetic-object"></span>
-                  </a>
-                  <div class="mry-label mry-fo">Scroll Down</div>
-                </div>
-              </div>
+        <div class="container">
+            <div class="mry-main-title mry-title-center">
+            <h1 class="mry-mb-20 mry-fo">
+                KP's<br /><span class="mry-border-text" 
+               >House</span
+                ><span class="mry-animation-el"></span>
+            </h1>
+            <div class="mry-scroll-hint-frame">
+                <a
+                class="mry-scroll-hint mry-smooth-scroll mry-magnetic-link mry-fo"
+                href="#mry-anchor"
+                >
+                <span class="mry-magnetic-object"></span>
+                </a>
+                <div class="mry-label mry-fo">Scroll Down</div>
             </div>
-          </div>
+            </div>
+        </div>
+      </div>
 
           <!-- project -->
           <div class="mry-about mry-p-100-100">
@@ -52,10 +48,10 @@ import MainLayout from '../../lib/layouts/main-layout.astro';
                       <div class="mry-subtitle">Goal</div>
                     </div>
                     <h3 class="mry-mb-40 mry-fo">
-                      Modern Minimalist Kitchen with a Designer’s Edge
+                      Modern Living with a Timeless Touch
                     </h3>
                     <p class="mry-text mry-fo">
-                      Designed with both form and function in mind, this kitchen combines streamlined cabinetry, understated brass or gold hardware, and elegant stone countertops. The result is a highly efficient, visually refined space that embodies modern simplicity with a designer’s touch.
+                      This contemporary minimalist home embraces simplicity with a luxurious edge. Thoughtful design, clean lines, and high-end finishes come together in a space that feels open, elegant, and effortlessly livable.
                     </p>
                   </div>
                 </div>
@@ -355,7 +351,7 @@ import MainLayout from '../../lib/layouts/main-layout.astro';
         <div class="mry-item-descr mry-fo">
           <h4 class="mry-mb-10">
             <a href="/ourworkpages/hiltontower/"
-              >12G Hilton Tower</a
+              >Jain House</a
             >
           </h4>
         </div>
@@ -390,7 +386,7 @@ import MainLayout from '../../lib/layouts/main-layout.astro';
         <div class="mry-item-descr mry-fo">
           <h4 class="mry-mb-10">
             <a href="/ourworkpages/CarabianCoast/"
-              >Carabian Coast</a
+              >Jane's House</a
             >
           </h4>
         </div>
@@ -402,3 +398,44 @@ import MainLayout from '../../lib/layouts/main-layout.astro';
 </body>
 
 </MainLayout>
+
+<style>
+
+  .mry-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 0 !important; 
+  }
+
+  .mry-banner .container {
+    position: relative; 
+    z-index: 2;
+  }
+
+  .mry-head-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+  }
+
+  .mry-head-bg img,
+  .mry-head-bg .mry-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mry-head-bg img {
+    opacity: 100%; 
+  }
+</style>
