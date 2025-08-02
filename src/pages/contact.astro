@@ -4,10 +4,27 @@ import MainLayout from "../lib/layouts/main-layout.astro";
 
 <MainLayout>
 
-
-
   <body>
-      <!-- cursor -->
+
+    <section class="hero-about">
+    <div class="fixed-bg bg1"></div>
+
+    <div class="container">
+      <div class="hero-about__grid">
+        <div class="hero-about__text">
+          <ul class="breadcrumb">
+            <li><a href="/" title="">Home</a></li>
+            <li><span>Contact us</span></li>
+          </ul>
+          <br>
+          <h3 style="font-size: 48px;">Contact Us</h3>
+        </div>
+        <div class="hero-about__image">
+        </div>
+      </div>
+    </div>
+  </section>
+
       <div class="mry-magic-cursor">
         <div class="mry-ball">
           <div class="mry-loader">
@@ -39,80 +56,149 @@ import MainLayout from "../lib/layouts/main-layout.astro";
           </div>
         </div>
       </div>
-      <!-- cursor end -->
 
-      <!-- top panel -->
-      
-      <!-- top panel end -->
-
-      
-      
-
-          <div class="mry-banner mry-p-140-0">
-            <div class="container">
-              <div class="mry-main-title mry-title-center">
-                <div class="mry-subtitle mry-mb-20 mry-fo">Contact</div>
-                <h1 class="mry-mb-20 mry-fo">
-                  Do you have any questions?<br /><span class="mry-border-text"
-                    >Write us a message.</span
-                  ><span class="mry-animation-el"></span>
-                </h1>
-                <div class="mry-text mry-fo">
-                  Lorem ipsum dolor sit amet, consectetur.<br />Adipisicing elit
-                  suscipit, at.
-                </div>
-                <div class="mry-scroll-hint-frame">
-                  <a
-                    class="mry-scroll-hint mry-smooth-scroll mry-magnetic-link mry-fo"
-                    href="#mry-anchor"
-                  >
-                    <span class="mry-magnetic-object"></span>
-                  </a>
-                  <div class="mry-label mry-fo">Scroll Down</div>
-                </div>
-              </div>
+      <div class="mry-banner mry-p-140-0">
+        <div class="container">
+          <div class="mry-main-title mry-title-center">
+            <!-- <div class="mry-subtitle mry-mb-20 mry-fo">Contact</div> -->
+            <h1 class="mry-mb-20 mry-fo">
+              Do you have any questions?<br /><span class="mry-border-text"
+                >Write us a message.</span
+              ><span class="mry-animation-el"></span>
+            </h1>
+            <div class="mry-text mry-fo">
+                Every great design begins with a conversation. Reach out to us and let’s craft something beautiful together.
             </div>
-          </div>
-
-           <div class="mry-about mry-p-100-0">
-          <div class="container">
-            <div class="row justify-content-center" style="align-items: center;">
-
-              <div class="col-lg-5">
-                <div class="mry-mb-100 mry-text-center mry-fo">
-                  <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753952172/QR_ne2mui.jpg" alt="QR Code for Contact" style="width: 380px; height: auto; border: 1px solid #eee; padding: 10px; border-radius: 5px; background-color: white;">
-                </div>
-              </div>
-
-              <div class="col-lg-7">
-                <div class="mry-mb-100 mry-fo">
-                  <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-                    <i class="fas fa-map-marker-alt" style="font-size: 24px; color: #F5B303; margin-right: 20px; margin-top: 5px; width: 30px; text-align: center;"></i>
-                    <div>
-                      <h4 class="mry-mb-10">Address:</h4>
-                      <p class="mry-text">12, Ground Floor, Dadi Building, Rani Sati Marg, Kathiyawadi Chowk, near Union Bank, Malad East, Mumbai, Maharashtra 400097</p>
-                    </div>
-                  </div>
-                  <div style="display: flex; align-items: flex-start; margin-bottom: 30px;">
-                    <i class="fas fa-phone-alt" style="font-size: 24px; color: #F5B303; margin-right: 20px; margin-top: 5px; width: 30px; text-align: center;"></i>
-                    <div>
-                      <h4 class="mry-mb-10">Phone:</h4>
-                      <p class="mry-text">+91-9372963906</p>
-                    </div>
-                  </div>
-                  <div style="display: flex; align-items: flex-start;">
-                    <i class="fas fa-envelope" style="font-size: 24px; color: #F5B303; margin-right: 20px; margin-top: 5px; width: 30px; text-align: center;"></i>
-                    <div>
-                      <h4 class="mry-mb-10">Email:</h4>
-                      <p class="mry-text">ezygrofin@gmail.com</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+            <div class="mry-scroll-hint-frame">
+              <a
+                class="mry-scroll-hint mry-smooth-scroll mry-magnetic-link mry-fo"
+                href="#mry-anchor"
+              >
+                <span class="mry-magnetic-object"></span>
+              </a>
+              <div class="mry-label mry-fo">Scroll Down</div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div id="mry-anchor" class="mry-about mry-p-100-0 contact-info-section">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+
+            <div class="col-lg-5">
+              <div class="qr-code-wrapper">
+                <a href="YOUR_WECHAT_LINK_HERE" target="_blank" title="Contact us on WeChat">
+                  <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753952172/QR_ne2mui.jpg" alt="QR Code for Contact">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="contact-details">
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <h4>Address:</h4>
+                    <p>Hong Kong</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <div>
+                    <h4>Phone:</h4>
+                    <p><a href="tel:+85252614604">(+852) 5261 4604</a></p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <h4>Email:</h4>
+                    <p><a href="mailto:contact@resetinteriors.com">contact@resetinteriors.com</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
   </body>
-  </MainLayout>
+</MainLayout>
+
+
+<style>
+
+  .hero-about {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+  .contact-info-section .row {
+    align-items: center;
+  }
+
+  .breadcrumb {
+  background-color: transparent;
+}
+
+  .qr-code-wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .qr-code-wrapper img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+
+  .qr-code-wrapper a:hover img {
+    transform: scale(1.03);
+  }
+
+  .contact-details {
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .contact-item i {
+    font-size: 24px;
+    color: #684F36;
+    margin-right: 20px;
+    margin-top: 5px;
+    width: 30px;
+    text-align: center;
+  }
+
+  .contact-item h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .contact-item p {
+    margin: 0;
+    color: #555;
+  }
+  
+  .contact-item a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-item a:hover {
+    color: #684F36;
+  }
+</style>
