@@ -2378,3 +2378,10 @@ blockquote:after {
   -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
   animation: checkmark-circle 0.6s ease-in-out backwards;
 }
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .mry-ball {
+    display: none;
+  }
+}
