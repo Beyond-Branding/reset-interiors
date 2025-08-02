@@ -3,202 +3,391 @@ import MainLayout from "../lib/layouts/main-layout.astro";
 ---
 
 <MainLayout>
-
-  <body>
-
-    <section class="hero-about">
+  <section class="hero-about">
     <div class="fixed-bg bg1"></div>
 
-    <div class="container">
-      <div class="hero-about__grid">
-        <div class="hero-about__text">
-          <ul class="breadcrumb">
-            <li><a href="/" title="">Home</a></li>
-            <li><span>Contact us</span></li>
-          </ul>
-          <br>
-          <h3 style="font-size: 48px;">Contact Us</h3>
-        </div>
-        <div class="hero-about__image">
+    <div class="mry-banner mry-p-140-0">
+      <div class="container">
+        <div class="mry-main-title mry-title-center">
+          <!-- <div class="mry-subtitle mry-mb-20 mry-fo">Contact</div> -->
+          <h1 class="mry-mb-20 mry-fo">
+            Do you have any questions?<br /><span class="mry-border-text"
+              >Write us a message.</span
+            ><span class="mry-animation-el"></span>
+          </h1>
+          <div class="mry-text mry-fo">
+            Every great design begins with a conversation. Reach out to us and
+            let’s craft something beautiful together.
+          </div>
+          <div class="mry-scroll-hint-frame">
+            <a
+              class="mry-scroll-hint mry-smooth-scroll mry-magnetic-link mry-fo"
+              href="#mry-anchor"
+            >
+              <span class="mry-magnetic-object"></span>
+            </a>
+            <div class="mry-label mry-fo">Scroll Down</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-      <div class="mry-magic-cursor">
-        <div class="mry-ball">
-          <div class="mry-loader">
-            <svg
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="40px"
-              height="40px"
-              viewBox="0 0 50 50"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+  <div id="mry-anchor" class="mry-about mry-p-100-0 contact-info-section">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-5">
+          <div class="qr-code-wrapper">
+            <a
+              href="YOUR_WECHAT_LINK_HERE"
+              target="_blank"
+              title="Contact us on WeChat"
             >
-              <path
-                d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"
-              >
-                <animateTransform
-                  attributeType="xml"
-                  attributeName="transform"
-                  type="rotate"
-                  from="0 25 25"
-                  to="360 25 25"
-                  dur="0.6s"
-                  repeatCount="indefinite"></animateTransform>
-              </path>
-            </svg>
+              <img
+                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753952172/QR_ne2mui.jpg"
+                alt="QR Code for Contact"
+              />
+            </a>
           </div>
         </div>
-      </div>
 
-      <div class="mry-banner mry-p-140-0">
-        <div class="container">
-          <div class="mry-main-title mry-title-center">
-            <!-- <div class="mry-subtitle mry-mb-20 mry-fo">Contact</div> -->
-            <h1 class="mry-mb-20 mry-fo">
-              Do you have any questions?<br /><span class="mry-border-text"
-                >Write us a message.</span
-              ><span class="mry-animation-el"></span>
-            </h1>
-            <div class="mry-text mry-fo">
-                Every great design begins with a conversation. Reach out to us and let’s craft something beautiful together.
-            </div>
-            <div class="mry-scroll-hint-frame">
-              <a
-                class="mry-scroll-hint mry-smooth-scroll mry-magnetic-link mry-fo"
-                href="#mry-anchor"
-              >
-                <span class="mry-magnetic-object"></span>
-              </a>
-              <div class="mry-label mry-fo">Scroll Down</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="mry-anchor" class="mry-about mry-p-100-0 contact-info-section">
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-
-            <div class="col-lg-5">
-              <div class="qr-code-wrapper">
-                <a href="YOUR_WECHAT_LINK_HERE" target="_blank" title="Contact us on WeChat">
-                  <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1753952172/QR_ne2mui.jpg" alt="QR Code for Contact">
-                </a>
+        <div class="col-lg-7">
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Address:</h4>
+                <p>Hong Kong</p>
               </div>
             </div>
-
-            <div class="col-lg-7">
-              <div class="contact-details">
-                <div class="contact-item">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <div>
-                    <h4>Address:</h4>
-                    <p>Hong Kong</p>
-                  </div>
-                </div>
-                <div class="contact-item">
-                  <i class="fas fa-phone-alt"></i>
-                  <div>
-                    <h4>Phone:</h4>
-                    <p><a href="tel:+85252614604">(+852) 5261 4604</a></p>
-                  </div>
-                </div>
-                <div class="contact-item">
-                  <i class="fas fa-envelope"></i>
-                  <div>
-                    <h4>Email:</h4>
-                    <p><a href="mailto:contact@resetinteriors.com">contact@resetinteriors.com</a></p>
-                  </div>
-                </div>
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h4>Phone:</h4>
+                <p><a href="tel:+85252614604">(+852) 5261 4604</a></p>
               </div>
             </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>
+                  <a href="mailto:contact@resetinteriors.com"
+                    >contact@resetinteriors.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <section class="vision-sec py-5 my-5">
+    <div class="fixed-bg bg1"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="custom-image-layout">
+            <div class="img-box img1">
+              <img
+                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A2_ultc2o.jpg"
+                alt="img1"
+              />
+            </div>
+            <div class="img-box img2">
+              <img
+                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A1_cwchor.jpg"
+                alt="img2"
+              />
+            </div>
+            <div class="img-box img3">
+              <img
+                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067748/A4_mkotch.jpg"
+                alt="img3"
+              />
+            </div>
+            <div class="img-box img4">
+              <img
+                src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754067749/A3_nvoo65.jpg"
+                alt="img4"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="vision-content mt-5 mt-lg-0">
+            <h2 style="font-size: 2.75rem; font-weight: 700; color: #684F36;">
+              Turn Your Dream <br />Home Into A Reality
+            </h2>
+            <p class="mt-3" style="font-size: 1rem; color: #333;">
+              We bring your vision to life with thoughtful design, expert
+              craftsmanship, and a deep understanding of what makes a house
+              truly feel like home. From concept to completion, we create
+              personalized spaces that reflect your style, needs, and dreams.
+            </p>
+            <a
+              href="/contact"
+              class="btn btn-outline-dark mt-4"
+              style="padding: 10px 30px; font-weight: 500;"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="col-lg-12">
+    <div class="mry-main-title mry-title-center mry-p-0-40">
+      <div class="mry-numbering mry-fo">
+        <div class="mry-border-text">03</div>
+        <div class="mry-subtitle">Contact form</div>
+      </div>
+      <h2 class="mry-fo">Write us a message</h2>
+    </div>
+  </div>
+
+  <div class="col-lg-8 contact-form">
+    <form
+      method="POST"
+      id="form"
+      class="mry-form mry-mb-100"
+      action="https://ultimatewebsolutions.net/mireya/light/send.php"
+    >
+      <div class="row">
+        <div class="col-lg-6">
+          <label class="mry-label mry-fo" for="firstName">First Name</label>
+          <div class="mry-fo">
+            <input
+              id="firstName"
+              name="firstName"
+              placeholder="John"
+              class="mry-default-link"
+              type="text"
+              data-parsley-pattern="^[a-zA-Z\s.]+$"
+              required
+            />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <label class="mry-label mry-fo" for="lastName">Last Name</label>
+          <div class="mry-fo">
+            <input
+              id="lastName"
+              name="lastName"
+              placeholder="Johnsone"
+              class="mry-default-link"
+              type="text"
+              data-parsley-pattern="^[a-zA-Z\s.]+$"
+              required
+            />
           </div>
         </div>
       </div>
 
-  </body>
+      <div class="row">
+        <div class="col-lg-6">
+          <label class="mry-label mry-fo" for="email">Email</label>
+          <div class="mry-fo">
+            <input
+              id="email"
+              name="email"
+              placeholder="type.your.mail@here"
+              class="mry-default-link"
+              type="email"
+              required
+            />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <label class="mry-label mry-fo" for="phone">Phone</label>
+          <div class="mry-fo">
+            <input
+              id="phone"
+              name="phone"
+              placeholder="+0 (000) 000 00 00"
+              class="mry-default-link"
+              type="text"
+              data-parsley-pattern="^\+{1}[0-9]+$"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mry-fade-object">
+        <label class="mry-label mry-fo" for="message">Message</label>
+        <div class="mry-fo">
+          <textarea
+            id="message"
+            name="message"
+            rows="8"
+            cols="80"
+            placeholder="Type your message here"
+            class="mry-default-link"
+            data-parsley-pattern="^[a-zA-Z0-9\s.:,!?']+$"
+            required></textarea>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-4">
+          <div class="mry-fo">
+            <button type="submit" class="mry-btn mry-default-link">
+              Send message
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <p class="mry-text mry-simple-text mry-contact-hint mry-fo">
+            <span class="mry-color-text">*</span> We promise not to share your personal
+            information with third parties.
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
 </MainLayout>
+<Fragment slot="head">
+  <style>
+    .custom-image-layout {
+      position: relative;
+      width: 100%;
+      height: 550px;
+    }
 
+    .count {
+      color: #684f36;
+    }
 
-<style>
+    .vision-content .btn-outline-dark:hover {
+      background-color: #684f36;
+      border-color: #684f36;
+      color: #fff;
+    }
 
-  .hero-about {
-  padding-top: 120px;
-  padding-bottom: 100px;
-}
+    .img-box {
+      position: absolute;
+      /* border-radius: 10px; */
+      overflow: hidden;
+    }
 
-  .contact-info-section .row {
-    align-items: center;
-  }
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-  .breadcrumb {
-  background-color: transparent;
-}
+    .img1 {
+      top: 248px;
+      left: 50px;
+      width: 132px;
+      height: 102px;
+    }
+    .img2 {
+      top: 50px;
+      left: 200px;
+      width: 406px;
+      height: 300px;
+    }
+    .img3 {
+      bottom: 0;
+      left: 0;
+      width: 280px;
+      height: 190px;
+    }
+    .img4 {
+      top: 360px;
+      left: 300px;
+      width: 160px;
+      height: 120px;
+    }
 
-  .qr-code-wrapper {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .qr-code-wrapper img {
-    max-width: 350px;
-    width: 100%;
-    height: auto;
-    border: 1px solid #eee;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    transition: transform 0.3s ease;
-  }
+    .fixed-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
 
-  .qr-code-wrapper a:hover img {
-    transform: scale(1.03);
-  }
+    .hero-about {
+      padding-top: 120px;
+      padding-bottom: 100px;
+    }
 
-  .contact-details {
-  }
+    .contact-info-section .row {
+      align-items: center;
+    }
 
-  .contact-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 30px;
-  }
+    .breadcrumb {
+      background-color: transparent;
+    }
 
-  .contact-item i {
-    font-size: 24px;
-    color: #684F36;
-    margin-right: 20px;
-    margin-top: 5px;
-    width: 30px;
-    text-align: center;
-  }
+    .qr-code-wrapper {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-  .contact-item h4 {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
+    .qr-code-wrapper img {
+      max-width: 350px;
+      width: 100%;
+      height: auto;
+      border: 1px solid #eee;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: white;
+      transition: transform 0.3s ease;
+    }
 
-  .contact-item p {
-    margin: 0;
-    color: #555;
-  }
-  
-  .contact-item a {
-    color: #555;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
+    .qr-code-wrapper a:hover img {
+      transform: scale(1.03);
+    }
 
-  .contact-item a:hover {
-    color: #684F36;
-  }
-</style>
+    .contact-details {
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+
+    .contact-item i {
+      font-size: 24px;
+      color: #684f36;
+      margin-right: 20px;
+      margin-top: 5px;
+      width: 30px;
+      text-align: center;
+    }
+
+    .contact-item h4 {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .contact-item p {
+      margin: 0;
+      color: #555;
+    }
+
+    .contact-item a {
+      color: #555;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-item a:hover {
+      color: #684f36;
+    }
+
+    .contact-form {
+      margin-inline: auto;
+    }
+  </style></Fragment
+>

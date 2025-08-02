@@ -254,6 +254,10 @@ import MainLayout from "../lib/layouts/main-layout.astro";
   </section>
 
   <style>
+    :root {
+      --color-primary: #694f36;
+    }
+
     .custom-image-layout {
       position: relative;
       width: 100%;
@@ -339,7 +343,7 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     }
 
     .service-card {
-      background-color: #684f36;
+      background-color: var(--color-primary);
 
       padding: 40px;
       border-radius: 20px;
