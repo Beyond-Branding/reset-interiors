@@ -1,0 +1,201 @@
+---
+import GridItem from "@/components/GridItem.astro";
+import MainLayout from "../lib/layouts/main-layout.astro";
+
+const projects = [
+  {
+    title: "Jain House",
+    thumbnailUrl:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1753430966/MASTER_BEDROOM_12G_HILTON_TOWER_2_okzaix.jpg",
+    projectUrl: "/ourworkpages/hiltontower/",
+  },
+  {
+    title: "KP's House",
+    thumbnailUrl:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1753431047/LIVING_ROOM_8G_CARIBBEAN_COAST_2.jpeg_dqbu76.jpg",
+    projectUrl: "/ourworkpages/CarabianCoast/",
+  },
+  {
+    title: "Jane's House",
+    thumbnailUrl:
+      "https://res.cloudinary.com/daoju0r3c/image/upload/v1753817985/STUDY_AREA_15A3_CAMBRIDGE_COURT_2.jpeg_myphru.jpg",
+    projectUrl: "/ourworkpages/Cambridge/",
+  },
+] as {
+  title: string;
+  thumbnailUrl: string;
+  projectUrl: string;
+}[];
+---
+
+<MainLayout>
+  <section class="hero-about">
+    <div class="fixed-bg bg1"></div>
+
+    <div class="mry-banner mry-p-140-0">
+      <div class="container">
+        <div class="mry-main-title mry-title-center">
+          <!-- <div class="mry-subtitle mry-mb-20 mry-fo">Portfolio</div> -->
+          <h1 class="mry-mb-20 mry-fo">
+            Explore Our Amazing<br /><span class="mry-border-text"
+              >Professional Cases</span
+            ><span class="mry-animation-el"></span>
+          </h1>
+          <div class="mry-text mry-fo">
+            Where smart design meets standout results curated spaces with
+            purpose and style.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div class="mry-portfolio mry-p-100-100">
+      <div class="container">
+        <div class="mry-filter mry-mb-40 mry-fo"></div>
+
+        <div class="mry-portfolio-frame">
+          <div class="mry-masonry-grid">
+            <div class="mry-grid-sizer"></div>
+            {
+              projects.map(({ title, thumbnailUrl, projectUrl }) => (
+                <GridItem
+                  title={title}
+                  thumbnailUrl={thumbnailUrl}
+                  projectUrl={projectUrl}
+                />
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="vision-sec py-5">
+      <div class="fixed-bg bg1"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Image Layout -->
+          <div class="col-lg-7">
+            <div class="custom-image-layout">
+              <div class="img-box img1">
+                <img
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754077206/O1_grchm8.jpg"
+                  alt="img1"
+                />
+              </div>
+              <div class="img-box img2">
+                <img
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754077205/O3_snhcy8.jpg"
+                  alt="img2"
+                />
+              </div>
+              <div class="img-box img3">
+                <img
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754077206/O2_evxhxi.jpg"
+                  alt="img3"
+                />
+              </div>
+              <div class="img-box img4">
+                <img
+                  src="https://res.cloudinary.com/daoju0r3c/image/upload/v1754077206/O4_rvm4f2.jpg"
+                  alt="img4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="col-lg-5">
+            <div class="vision-content mt-5 mt-lg-0">
+              <h2 style="font-size: 2.75rem; font-weight: 700; color: #684F36;">
+                A Reflection of<br />Vision and Craftsmanship
+              </h2>
+              <p class="mt-3" style="font-size: 1rem; color: #333;">
+                Our work is where creativity meets precision. Every project we
+                undertake is a blend of thoughtful design, fine detailing, and a
+                deep commitment to bringing unique stories to life. Each space
+                we create is not just built it’s crafted to embody elegance,
+                functionality, and the essence of those who live within it.
+              </p>
+              <a
+                href="/contact"
+                class="btn btn-outline-dark mt-4"
+                style="padding: 10px 30px; font-weight: 500;"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <style>
+    .hero-about {
+      padding-top: 120px;
+      padding-bottom: 100px;
+    }
+
+    .vision-content .btn-outline-dark:hover {
+      background-color: #684f36;
+      border-color: #684f36;
+      color: #fff;
+    }
+
+    .mry-banner {
+      padding-top: 40px !important;
+    }
+
+    .breadcrumb {
+      background-color: transparent;
+    }
+
+    .custom-image-layout {
+      position: relative;
+      width: 100%;
+      height: 550px;
+    }
+
+    .img-box {
+      position: absolute;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .img1 {
+      top: 248px;
+      left: 50px;
+      width: 132px;
+      height: 102px;
+    }
+
+    .img2 {
+      top: 50px;
+      left: 200px;
+      width: 406px;
+      height: 300px;
+    }
+
+    .img3 {
+      bottom: 0;
+      left: 0;
+      width: 280px;
+      height: 190px;
+    }
+
+    .img4 {
+      top: 360px;
+      left: 300px;
+      width: 160px;
+      height: 120px;
+    }
+  </style>
+</MainLayout>

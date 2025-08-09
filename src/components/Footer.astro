@@ -1,0 +1,159 @@
+---
+import MapPin from "@/icons/map-pin.astro";
+import Mail from "@/icons/mail.astro";
+import Phone from "@/icons/phone.astro";
+
+type ListType = {
+  Icon?: () => any;
+  title: string;
+  href: string;
+};
+
+const services = [
+  { title: "Mood board & Style guidance", href: "/services" },
+  { title: "2D Drawings & 3D Renders", href: "/services" },
+  { title: "Contractor Communication", href: "/services" },
+  { title: "Furniture Selection & Supplier Connections", href: "/services" },
+  { title: "Site Visits", href: "/services" },
+  { title: "Ongoing Support", href: "/services" },
+] as ListType[];
+const contacts = [
+  {
+    Icon: MapPin,
+    title: "Hong Kong",
+    href: "#",
+  },
+  {
+    Icon: Mail,
+    title: "Email: contact@resetinteriors.com",
+    href: "#",
+  },
+  {
+    Icon: Phone,
+    title: "Phone: (+852) 222-2222",
+    href: "#",
+  },
+] as ListType[];
+---
+
+<style>
+  footer {
+    /* Variables */
+    --background-color: #d1c6ba;
+    --heading-color: #7e6422;
+    --color-primary: #694f36;
+
+    background: var(--background-color);
+    border-top: 2px solid var(--color-primary);
+  }
+  .container {
+    width: 100%;
+    max-width: 1200px; /* or any fixed value */
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 1.25rem;
+  }
+
+  footer svg {
+    display: none;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    text-align: center;
+    padding-block: 1.75rem;
+  }
+
+  .footer-container > div {
+    flex: 1;
+  }
+
+  .footer-container li {
+    margin-bottom: 1rem;
+  }
+
+  .footer-container > div > h4 {
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-list > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .contact-list > li > div {
+    color: var(--color-primary);
+  }
+
+  .copyright {
+    background: white;
+    text-align: center;
+    padding-block: 1.25rem;
+
+    border-block: 2px solid var(--color-primary);
+  }
+
+  /* Responsive styles for desktop */
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+      justify-content: flex-start;
+      text-align: left;
+      gap: 2.25rem;
+    }
+
+    .contact-list > li {
+      justify-content: flex-start;
+    }
+  }
+</style>
+
+<footer>
+  <div class="container footer-container">
+    <div class="column about">
+      <h4>About</h4>
+      <p>
+        From childhood curiosity to global expertise, my journey in interior
+        design has been a lifelong pursuit of crafting meaningful spaces that
+        tell stories and elevate everyday life.
+      </p>
+    </div>
+
+    <div class="column services">
+      <h4>Services</h4>
+
+      <ul class="services-list">
+        {
+          services.map((item) => (
+            <li>
+              <a href={item.href}>{item.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class="column contact">
+      <h4>Get in touch</h4>
+      <ul class="contact-list">
+        {
+          contacts.map(({ Icon, title, href }) => (
+            <li>
+              <div>{<Icon />}</div>
+              <a href={href}>{title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <h6>Copyright By © BEYOND BRANDING – 2025</h6>
+  </div>
+</footer>
