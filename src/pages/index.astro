@@ -1,13 +1,105 @@
 ---
-import "../styles/global.css";
-import ComingSoonPage from "@/lib/pages/ComingSoonPage";
+import SliderItem from "@/components/SliderItem.astro";
+import MainLayout from "../lib/layouts/main-layout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <title>Reset Interiors</title>
-  </head>
-  <body>
-    <ComingSoonPage client:only />
-  </body>
-</html>
+<MainLayout disableFooter>
+  <div class="mry-content-frame" id="scroll">
+    <canvas class="mry-dots"></canvas>
+
+    <div class="swiper-container mry-main-slider">
+      <div class="swiper-wrapper">
+        <SliderItem
+          imageUrl="https://res.cloudinary.com/daoju0r3c/image/upload/v1753637146/3_txberc.png"
+          projectUrl="/ourworkpages/Cambridge/"
+        >
+          <Fragment slot="title">
+            Designing the <br /><span class="mry-border-text"
+              >Heart of the Home</span
+            >
+          </Fragment>
+          <Fragment slot="subtitle">
+            From cozy charm to modern minimalism, expert <br />design turns your
+            living room into a space that<br /> reflects your lifestyle and personality.
+          </Fragment>
+        </SliderItem>
+
+        <SliderItem
+          imageUrl="https://res.cloudinary.com/daoju0r3c/image/upload/v1753638047/compressed_3_ieaium.png"
+          projectUrl="/ourworkpages/Cambridge/"
+        >
+          <Fragment slot="title">
+            Transforming <br />Bedrooms Into <br />
+            <span class="mry-border-text">Elevated Living<br /> Spaces</span>
+          </Fragment>
+          <Fragment slot="subtitle">
+            As your personal sanctuary, the bedroom deserves <br /> a design that
+            harmonizes comfort, elegance, and <br /> tranquility—crafted for rest
+            and renewal.
+          </Fragment>
+        </SliderItem>
+
+        <SliderItem
+          projectUrl="/ourworkpages/Cambridge/"
+          imageUrl="https://res.cloudinary.com/daoju0r3c/image/upload/v1753638231/study_awn2sa.jpg"
+        >
+          <Fragment slot="title">
+            Curating Study <br />Rooms into <span class="mry-border-text"
+              ><br /> Elegant Interiors</span
+            >
+          </Fragment>
+          <Fragment slot="subtitle">
+            Designed for focus and inspiration, our study rooms <br /> combine sleek
+            aesthetics with smart functionality. <br /> Clean lines, organized storage,
+            and soothing tones <br /> create a modern space that’s perfect for working,
+            <br /> studying, or simply enjoying a quiet reading nook.
+          </Fragment>
+        </SliderItem>
+
+        <SliderItem
+          projectUrl="/ourworkpages/hiltontower/"
+          imageUrl="https://res.cloudinary.com/daoju0r3c/image/upload/v1753638399/kitchen_y2wddw.jpg"
+        >
+          <Fragment slot="title">
+            Inspiring Spaces<br /><span class="mry-border-text"
+              >Timeless Kitchens</span
+            >
+          </Fragment>
+
+          <Fragment slot="subtitle">
+            Beyond cooking, the kitchen is a space where <br /> memories are made
+            and stories are shared. Make <br /> every moment meaningful.
+          </Fragment>
+        </SliderItem>
+      </div>
+    </div>
+
+    <div class="mry-slider-pagination-frame">
+      <div class="mry-slider-pagination"></div>
+    </div>
+
+    <div class="mry-slider-nav-panel">
+      <div class="container">
+        <div class="mry-slider-progress-bar-frame">
+          <div class="mry-slider-progress-bar">
+            <div class="mry-progress"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mry-slider-arrows">
+        <div class="mry-label">Slider Navigation</div>
+        <div class="mry-button-prev mry-magnetic-link">
+          <span class="mry-magnetic-object"
+            ><i class="fas fa-arrow-left"></i></span
+          >
+        </div>
+        <div class="mry-button-next mry-magnetic-link">
+          <span class="mry-magnetic-object"
+            ><i class="fas fa-arrow-right"></i></span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>
