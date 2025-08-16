@@ -1,4 +1,24 @@
 ---
+/* Stylesheets imports */
+
+/* Minteriors */
+import "@/lib/styles/minterior/animate.css";
+import "@/lib/styles/minterior/all.min.css";
+import "@/lib/styles/minterior/line-awesome.min.css";
+import "@/lib/styles/minterior/slick.css";
+import "@/lib/styles/minterior/slick-theme.css";
+import "@/lib/styles/minterior/color.css";
+import "@/lib/styles/minterior/style.css";
+import "@/lib/styles/minterior/responsive.css";
+
+/* Mireya */
+import "@/lib/styles/mireya/plugins/bootstrap.min.css";
+import "@/lib/styles/mireya/plugins/font-awesome.min.css";
+import "@/lib/styles/mireya/plugins/swiper.min.css";
+import "@/lib/styles/mireya/plugins/fancybox.min.css";
+import "@/lib/styles/mireya/plugins/mapbox-style.css";
+import "@/lib/styles/mireya/style-light.css";
+
 import WhatsAppWidget from "@/components/WhatsAppWidget.astro";
 import Footer from "@/components/Footer.astro";
 import NavMenu from "@/components/NavMenu.astro";
@@ -28,64 +48,6 @@ const { activePath = "/", disableFooter = false } = Astro.props as {
       href="/mireya/img/light/favicon.png"
       type="image/x-icon"
     />
-
-    <!-- Minterirors -->
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/animate.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/all.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/line-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/slick-theme.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/color.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/responsive.css"
-    />
-
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/bootstrap.min.css" />
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/font-awesome.min.css" />
-    <!-- swiper css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/swiper.min.css" />
-    <!-- fancybox css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/fancybox.min.css" />
-    <!-- mapbox css -->
-    <link href="/mireya/css/plugins/mapbox-style.css" rel="stylesheet" />
-    <!-- main css -->
-    <link rel="stylesheet" href="/mireya/css/style-light.css" />
 
     <slot name="head" />
 
