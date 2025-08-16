@@ -2,7 +2,7 @@
 import MainLayout from "../lib/layouts/main-layout.astro";
 ---
 
-<MainLayout>
+<MainLayout activePath="/about">
   <div class="transition-fade" id="scroll">
     <section class="pager-section">
       <div class="container">
@@ -121,24 +121,24 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     </div>
 
     <script>
-      function animateCountUp(element) {
+      function animateCountUp(element: Element) {
         const finalCount = parseInt(element.textContent, 10);
         const duration = 4000;
-        let startTime = null;
+        let startTime: any = null;
 
-        const step = (timestamp) => {
+        const step = (timestamp: any) => {
           if (!startTime) startTime = timestamp;
           const progress = timestamp - startTime;
           const current = Math.min(
             Math.floor((progress / duration) * finalCount),
             finalCount
           );
-          element.textContent = current;
+          element.textContent = current as any;
 
           if (progress < duration) {
             window.requestAnimationFrame(step);
           } else {
-            element.textContent = finalCount;
+            element.textContent = finalCount as any;
           }
         };
         window.requestAnimationFrame(step);
@@ -149,7 +149,7 @@ import MainLayout from "../lib/layouts/main-layout.astro";
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               const counters = entry.target.querySelectorAll(".count");
-              counters.forEach((counter) => {
+              counters.forEach((counter: Element) => {
                 animateCountUp(counter);
               });
               observer.unobserve(entry.target);

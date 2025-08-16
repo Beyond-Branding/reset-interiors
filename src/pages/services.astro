@@ -2,7 +2,7 @@
 import MainLayout from "../lib/layouts/main-layout.astro";
 ---
 
-<MainLayout>
+<MainLayout activePath="/services">
   <section class="pager-section">
     <div class="container">
       <div class="pager-info">
@@ -10,8 +10,9 @@ import MainLayout from "../lib/layouts/main-layout.astro";
       </div>
       <div class="pger-imgs style2">
         <div class="abt-imgz">
-          <img src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755015257/reset_fis9xc.jpg"
-              alt="Service image"
+          <img
+            src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755015257/reset_fis9xc.jpg"
+            alt="Service image"
           />
         </div>
       </div><!--pger-imgs end-->
@@ -255,12 +256,11 @@ import MainLayout from "../lib/layouts/main-layout.astro";
     }
 
     .abt-imgz img {
-  max-width: 900px; 
-  width: 110%;
-  height: 100%;
-  margin-left: -60px;
-}
-
+      max-width: 900px;
+      width: 110%;
+      height: 100%;
+      margin-left: -60px;
+    }
 
     .custom-image-layout {
       position: relative;
