@@ -19,7 +19,6 @@ export default defineConfig({
       projectId: "ctni7nro",
       dataset: "production",
       useCdn: false,
-      studioBasePath: "/admin",
     }),
     react(),
   ],

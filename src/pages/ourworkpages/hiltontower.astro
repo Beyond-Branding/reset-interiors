@@ -1,5 +1,16 @@
 ---
+import { client, urlFor } from "@/lib/sanityClient";
 import MainLayout from "../../lib/layouts/main-layout.astro";
+import type { ProjectType } from "@/types/project.types";
+
+export const prerender = false;
+
+const query = `*[_type == "project" && name == "Jain House"][0]`;
+const project: ProjectType = await client.fetch(query);
+
+const images = await Promise.all(
+  project?.images?.map((image) => urlFor(image).url())
+);
 ---
 
 <MainLayout activePath="/our-work">
@@ -38,145 +49,29 @@ import MainLayout from "../../lib/layouts/main-layout.astro";
           <div class="mry-portfolio-frame">
             <div class="mry-masonry-grid mry-without-descr mry-p-0-100">
               <div class="mry-grid-sizer"></div>
-
-              <div
-                class="mry-masonry-grid-item mry-masonry-grid-item-50 interior"
-              >
-                <div class="mry-card-item">
-                  <div class="mry-card-cover-frame mry-mb-20 mry-fo">
-                    <img
-                      src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755030011/jane4_fbyxd7.jpg"
-                      alt="project"
-                    />
-                    <div class="mry-cover-overlay"></div>
-                    <div class="mry-hover-links">
-                      <a
-                        href="https://res.cloudinary.com/daoju0r3c/image/upload/v1755030011/jane4_fbyxd7.jpg"
-                        data-fancybox="works"
-                        class="mry-zoom mry-magnetic-link"
-                        ><span class="mry-magnetic-object"
-                          ><i class="fas fa-expand"></i></span
-                        ></a
-                      >
+              {
+                images.map((image) => (
+                  <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+                    <div class="mry-card-item">
+                      <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+                        <img src={image} alt="project" />
+                        <div class="mry-cover-overlay" />
+                        <div class="mry-hover-links">
+                          <a
+                            href={image}
+                            data-fancybox="works"
+                            class="mry-zoom mry-magnetic-link"
+                          >
+                            <span class="mry-magnetic-object">
+                              <i class="fas fa-expand" />
+                            </span>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div
-                class="mry-masonry-grid-item mry-masonry-grid-item-50 mry-masonry-grid-item-h-x-2 repair"
-              >
-                <div class="mry-card-item">
-                  <div class="mry-card-cover-frame mry-mb-20 mry-fo">
-                    <div class="mry-cover-overlay"></div>
-                    <img
-                      src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755030008/jane3_jizxoj.jpg"
-                      alt="project"
-                    />
-                    <div class="mry-hover-links">
-                      <a
-                        href="https://res.cloudinary.com/daoju0r3c/image/upload/v1755030008/jane3_jizxoj.jpg"
-                        data-fancybox="works"
-                        class="mry-zoom mry-magnetic-link"
-                        ><span class="mry-magnetic-object"
-                          ><i class="fas fa-expand"></i></span
-                        ></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="mry-masonry-grid-item mry-masonry-grid-item-50 interior repair"
-              >
-                <div class="mry-card-item">
-                  <div class="mry-card-cover-frame mry-mb-20 mry-fo">
-                    <img
-                      src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755029992/jane2_vw8n1b.jpg"
-                      alt="project"
-                    />
-                    <div class="mry-cover-overlay"></div>
-                    <div class="mry-hover-links">
-                      <a
-                        href="https://res.cloudinary.com/daoju0r3c/image/upload/v1755029992/jane2_vw8n1b.jpg"
-                        data-fancybox="works"
-                        class="mry-zoom mry-magnetic-link"
-                        ><span class="mry-magnetic-object"
-                          ><i class="fas fa-expand"></i></span
-                        ></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="mry-masonry-grid-item mry-masonry-grid-item-50 mry-masonry-grid-item-h-x-1 repair"
-              >
-                <div class="mry-card-item">
-                  <div class="mry-card-cover-frame mry-mb-20 mry-fo">
-                    <div class="mry-cover-overlay"></div>
-                    <img
-                      src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755030009/jane5_rix7dn.jpg"
-                      alt="project"
-                    />
-                    <div class="mry-hover-links">
-                      <a
-                        href="https://res.cloudinary.com/daoju0r3c/image/upload/v1755030009/jane5_rix7dn.jpg"
-                        data-fancybox="works"
-                        class="mry-zoom mry-magnetic-link"
-                        ><span class="mry-magnetic-object"
-                          ><i class="fas fa-expand"></i></span
-                        ></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="mry-masonry-grid-item mry-masonry-grid-item-50 mry-masonry-grid-item-h-x-2 repair"
-              >
-                <div class="mry-card-item">
-                  <div class="mry-card-cover-frame mry-mb-20 mry-fo">
-                    <div class="mry-cover-overlay"></div>
-                    <img
-                      src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755029981/jane1_uvwjap.jpg"
-                      alt="project"
-                    />
-                    <div class="mry-hover-links">
-                      <a
-                        href="https://res.cloudinary.com/daoju0r3c/image/upload/v1755029981/jane1_uvwjap.jpg"
-                        data-fancybox="works"
-                        class="mry-zoom mry-magnetic-link"
-                        ><span class="mry-magnetic-object"
-                          ><i class="fas fa-expand"></i></span
-                        ></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="mry-masonry-grid-item mry-masonry-grid-item-50 mry-masonry-grid-item-h-x-1 repair"
-              >
-                <div class="mry-card-item">
-                  <div class="mry-card-cover-frame mry-mb-20 mry-fo">
-                    <div class="mry-cover-overlay"></div>
-                    <img
-                      src="https://res.cloudinary.com/daoju0r3c/image/upload/v1755029971/jane6_sawi2c.jpg"
-                      alt="project"
-                    />
-                    <div class="mry-hover-links">
-                      <a
-                        href="https://res.cloudinary.com/daoju0r3c/image/upload/v1755029971/jane6_sawi2c.jpg"
-                        data-fancybox="works"
-                        class="mry-zoom mry-magnetic-link"
-                        ><span class="mry-magnetic-object"
-                          ><i class="fas fa-expand"></i></span
-                        ></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
+                ))
+              }
             </div>
           </div>
         </div>

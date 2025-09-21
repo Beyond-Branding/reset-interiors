@@ -6,7 +6,7 @@ const projectType = defineType({
   type: "document",
   fields: [
     defineField({
-      name: "Name",
+      name: "name",
       title: "Project Name",
       type: "string",
       validation: (Rule) => Rule.required(),
