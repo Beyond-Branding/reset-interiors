@@ -22,7 +22,7 @@ input#amount,
 .catg-controls li a:hover,
 .social-links.without-bg li a,
 .option-set li a.selected {
-	color: #0d6b68;
+  color: #7e6422;
 }
 
 .responsive-mobile-menu,
@@ -56,14 +56,12 @@ input:checked + .slider,
 .thecube .cube:before,
 .failed,
 .text-info {
-	background-color: #0d6b68;
- }
+  background-color: var(--color-primary);
+}
 
 .proz-mint:after,
 .dott:before,
 .ui-slider-horizontal .ui-slider-handle,
 .form-control:focus {
-	border-color: #0d6b68;
+  border-color: #7e6422;
 }
-
-

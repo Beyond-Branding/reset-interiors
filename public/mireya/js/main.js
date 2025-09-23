@@ -2,16 +2,16 @@
   "use strict";
 
   // parsely validation
-  $("#form").parsley();
+  // $("#form").parsley();
 
   // clear parsley empty elements
-  if ($("#form").length > 0) {
-    $("#form")
-      .parsley()
-      .on("field:success", function () {
-        $("ul.parsley-errors-list").not(":has(li)").remove();
-      });
-  }
+  // if ($("#form").length > 0) {
+  // $("#form")
+  // .parsley()
+  // .on("field:success", function () {
+  // $("ul.parsley-errors-list").not(":has(li)").remove();
+  // });
+  // }
 
   $(document).ready(function () {
     var timeout = 1000;
@@ -392,16 +392,16 @@
   // reinit
   document.addEventListener("swup:contentReplaced", function () {
     // parsely validation
-    $("#form").parsley();
+    // $("#form").parsley();
 
     // clear parsley empty elements
-    if ($("#form").length > 0) {
-      $("#form")
-        .parsley()
-        .on("field:success", function () {
-          $("ul.parsley-errors-list").not(":has(li)").remove();
-        });
-    }
+    // if ($("#form").length > 0) {
+    // $("#form")
+    // .parsley()
+    // .on("field:success", function () {
+    // $("ul.parsley-errors-list").not(":has(li)").remove();
+    // });
+    // }
 
     $(document).ready(function () {
       var timeout = 1000;

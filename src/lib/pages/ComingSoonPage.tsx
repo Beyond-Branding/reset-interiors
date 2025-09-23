@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import "@/styles/global.css";
+import { useState, useEffect } from "react";
 
 const ComingSoonPage = ({}) => {
   const [timeLeft, setTimeLeft] = useState({
@@ -7,9 +8,6 @@ const ComingSoonPage = ({}) => {
     minutes: 0,
     seconds: 0,
   });
-
-  const [email, setEmail] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
     // Set target date (30 days from now)
@@ -72,25 +70,6 @@ const ComingSoonPage = ({}) => {
             Something extraordinary is on the horizon. Get ready to experience
             innovation like never before.
           </p>
-        </div>
-
-        {/* Countdown Timer */}
-        <div className="mb-12 animate-slide-up">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-2xl mx-auto">
-            {Object.entries(timeLeft).map(([unit, value]) => (
-              <div
-                key={unit}
-                className="bg-white/80 backdrop-blur-lg rounded-2xl p-6 border border-gray-300 shadow-xl hover:bg-white transition-all duration-300 hover:scale-105"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-                  {value.toString().padStart(2, "0")}
-                </div>
-                <div className="text-gray-500 text-sm md:text-base uppercase tracking-wider">
-                  {unit}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
