@@ -1,4 +1,21 @@
 ---
+/* Styles */
+import "@/styles/minterior/css/animate.css";
+import "@/styles/minterior/css/all.min.css";
+import "@/styles/minterior/css/line-awesome.min.css";
+import "@/styles/minterior/css/slick.css";
+import "@/styles/minterior/css/slick-theme.css";
+import "@/styles/minterior/css/color.css";
+import "@/styles/minterior/css/style.css";
+import "@/styles/minterior/css/responsive.css";
+
+import "@/styles/mireya/css/plugins/bootstrap.min.css";
+import "@/styles/mireya/css/plugins/font-awesome.min.css";
+import "@/styles/mireya/css/plugins/swiper.min.css";
+import "@/styles/mireya/css/plugins/fancybox.min.css";
+import "@/styles/mireya/css/plugins/mapbox-style.css";
+import "@/styles/mireya/css/style-light.css";
+
 import WhatsAppWidget from "@/components/WhatsAppWidget.astro";
 import Footer from "@/components/Footer.astro";
 import NavMenu from "@/components/NavMenu.astro";
@@ -31,62 +48,6 @@ const { activePath = "/", disableFooter = false } = Astro.props as {
 
     <!-- Minterirors -->
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/animate.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/all.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/line-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/slick-theme.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/color.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/minterior/assets/css/responsive.css"
-    />
-
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/bootstrap.min.css" />
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/font-awesome.min.css" />
-    <!-- swiper css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/swiper.min.css" />
-    <!-- fancybox css -->
-    <link rel="stylesheet" href="/mireya/css/plugins/fancybox.min.css" />
-    <!-- mapbox css -->
-    <link href="/mireya/css/plugins/mapbox-style.css" rel="stylesheet" />
-    <!-- main css -->
-    <link rel="stylesheet" href="/mireya/css/style-light.css" />
-
     <slot name="head" />
 
     <title>Reset Interiors</title>
@@ -98,7 +59,7 @@ const { activePath = "/", disableFooter = false } = Astro.props as {
       <div class="mry-preloader mry-active">
         <div class="mry-preloader-content">
           <img
-            class="mry-logo mry-mb-20"
+            class="mry-mb-20 mry-logo"
             src="/mireya/img/light/logo.svg"
             alt="Mireya"
           />
